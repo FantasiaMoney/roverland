@@ -1,0 +1,8 @@
+<svg id="icon-external-link" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <rect id="cell" width="16" height="16" fill="none"/>
+  <g id="icon" transform="translate(3 3.5)">
+    <path id="Path_146372" data-name="Path 146372" d="M9,8.5H1V.5" fill="none" stroke="#646564" stroke-miterlimit="10" stroke-width="1"/>
+    <line id="Línea_31" data-name="Línea 31" y1="5.344" x2="5.343" transform="translate(3.276 0.881)" fill="none" stroke="#646564" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Trazado_146216" data-name="Trazado 146216" d="M6.369,1H9.9V4.53" transform="translate(-1.278 -0.119)" fill="none" stroke="#646564" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
