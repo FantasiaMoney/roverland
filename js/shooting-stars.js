@@ -53,7 +53,7 @@
       displacement *= 0.6;
     }
   
-    document.body.appendChild(this.terrain);
+    //document.body.appendChild(this.terrain);
   }
   
   Terrain.prototype.update = function () {
@@ -92,14 +92,14 @@
   // stars
   function Star(options) {
     this.size = Math.random() * 2;
-    this.speed = Math.random() * .05;
+    this.speed = Math.random() * .5;
     this.x = options.x;
     this.y = options.y;
   }
   
   Star.prototype.reset = function () {
     this.size = Math.random() * 2;
-    this.speed = Math.random() * .05;
+    this.speed = Math.random() * .5;
     this.x = width;
     this.y = Math.random() * height;
   };

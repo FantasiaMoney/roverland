@@ -45,7 +45,7 @@ $(document).ready(function($) {
 	
 	$('.n-link-1').click(function () {	
 		menuclose();
-		var elem = $('#Fecth')[0];		
+		var elem = $('#Fetch')[0];		
 		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
@@ -55,7 +55,7 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#Fecth").offset().top - 56
+				scrollTop: $("#Fetch").offset().top - 56
 			}, 800 );
 		}
 		return false;		

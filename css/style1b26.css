@@ -1347,7 +1347,7 @@
      background: var(--new-black-color);
      
 }
- #RoverGib, #RoverOne, #RoverChains, #Fecth, #innovation-stack{
+ #RoverGib, #RoverOne, #RoverChains, #Fetch, #innovation-stack{
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
@@ -3863,7 +3863,7 @@
         text-align: left;
          direction: ltr;
     }
-     .dog-section-single .dog-section-content .section-subtitle, #innovation-stack .section-subtitle, #Fecth .section-subtitle{
+     .dog-section-single .dog-section-content .section-subtitle, #innovation-stack .section-subtitle, #Fetch .section-subtitle{
         display: block;
         font-weight: normal;
         text-transform: uppercase;
@@ -3950,7 +3950,7 @@
     
 
     /* innovation stack css */
-    #innovation-stack, #Fecth{
+    #innovation-stack, #Fetch{
         padding: 50px 0px;
     }
     #innovation-stack .stack_partners{
@@ -3971,7 +3971,7 @@
         width: 100%;
     }
 
-    .fecth_list{
+    .Fetch_list{
         width: max-content;
         margin-left: auto;
         margin-right: auto;
