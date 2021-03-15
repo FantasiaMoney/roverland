@@ -1318,7 +1318,7 @@
      z-index: 1;
      vertical-align: top;
      width: 100%;
-     min-height: 100vh !important;
+     /* min-height: 100vh !important; */
      /* position: -webkit-sticky;
      position: -moz-sticky;
      position: -ms-sticky;
@@ -1346,6 +1346,9 @@
  #RoverGib, #RoverOne, #RoverChains{
      /* background: var(--main-color); */
      background: var(--new-black-color);
+}
+#RoverDao img{
+    border-radius: 25px;
 }
  .undermark.yellow{
      border-bottom:4px solid var(--sub-color);
@@ -3816,7 +3819,7 @@
         position: sticky;
         top: 0px;
         left: 0px; */
-        min-height: 100vh !important;
+        /* min-height: 100vh !important; */
         /* background: #1f1f24; */
         background-color: rgb(17, 14, 25);
         /* box-shadow: 0px 0px 30px 30px #00000038; */
@@ -3917,8 +3920,8 @@
          box-shadow: 0px 0px 30px 30px #000000ab;
     } */
      .content-banner-wrap-theme{
-         min-height: 100vh !important;
-         padding: 80px 0px;
+         /* min-height: 100vh !important; */
+         padding: 30px 0px;
          display: table;
          width: 100%;
          /* position: -webkit-sticky;
