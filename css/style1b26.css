@@ -1343,7 +1343,7 @@
      background: var(--new-black-color);
      
 }
- #RoverGib, #RoverOne, #RoverChains{
+ #RoverGib, #RoverOne, #RoverChains, #innovation-stack{
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
@@ -3857,24 +3857,25 @@
         text-align: left;
          direction: ltr;
     }
-     .dog-section-single .dog-section-content .section-subtitle{
+     .dog-section-single .dog-section-content .section-subtitle, #innovation-stack .section-subtitle {
         display: block;
         font-weight: normal;
         text-transform: uppercase;
         letter-spacing: 2px;
-        font-size: 13px;
+        /* font-size: 13px; */
+        font-size: 34px;
+        font-weight: 700;
         margin-bottom: 10px;
         /* color: #0f5477; */
-        /* color:var(--sub-color); */
-        color: #FFF;
+        color:var(--sub-color);
+        /* color: #FFF; */
     }
      .dog-section-single .dog-section-content .section-title{
         margin-bottom: 30px;
-        font-size: 34px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 44px;
-        /* color: #000; */
-        color: var(--sub-color);
+        color: #FFFFFF;
         width: 100%;
         display: inline-block;
         vertical-align: top;
@@ -3940,3 +3941,24 @@
          min-height: initial !important;
     }
     
+
+    /* innovation stack css */
+    #innovation-stack{
+        padding: 50px 0px;
+    }
+    #innovation-stack .stack_partners{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+    #innovation-stack .stack_partners .partner_image {
+        /* display: contents; */
+        /* visibility: visible !important; */
+        max-width: 150px !important;
+    }
+    #innovation-stack .stack_partners div img{
+        /* max-width: 150px; */
+        width: 100%;
+    }
