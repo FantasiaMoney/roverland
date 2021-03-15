@@ -2187,8 +2187,9 @@
      padding: 0px!important;
      overflow-y: hidden;
 }
- .modal-backdrop {
-     background: #FFFFFF;
+.modal-backdrop.show {
+    opacity: 0.8;
+    background: #000000;
 }
  .modal-backdrop.in {
      opacity: 0.9;

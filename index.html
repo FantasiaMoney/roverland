@@ -74,11 +74,11 @@
 		}
 
 		.font-lg {
-			font-size: 70px;
+			font-size: 60px;
 		}
 
 		.font-lg2 {
-			font-size: 42px;
+			font-size: 40px;
 		}
 
 		@media (max-width: 767px) {
@@ -162,10 +162,10 @@
 						<div class="banner-text-wrap">
 							<div class="container d-block">
 								<div class="row vh-100 row-eq-height animate">
-									<div class="col-md-6 align-self-center">
+									<div class="col-md-7 align-self-center">
 										<img class="animate-left" src="images/header-image.png" alt="" />
 									</div>
-									<div class="col-md-6 align-self-center">
+									<div class="col-md-5 align-self-center">
 										<div class="banner-text-center">
 											<div class="banner-header text-center ">
 												<div class="banner-header-title">
@@ -177,8 +177,7 @@
 													</div>
 												</div>
 												<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)" download>Get Rover</a>
-													<a class="button" href="javascript:void(0)" download>Fetch!</a>
+													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
 												</div>
 											</div>
 										</div>
@@ -599,6 +598,27 @@
 				</div>
 			</div>
 		</div>
+	</div>
+	
+	
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body">
+			Its dummy Content you can change it
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			<button type="button" class="btn btn-primary">Save changes</button>
+		  </div>
+		</div>
+	  </div>
 	</div>
 	<script>
 		//wow-animation
