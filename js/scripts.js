@@ -157,6 +157,72 @@ $(document).ready(function($) {
 		}
 		return false;		
 	});	
+
+	$('.n-link-8').click(function () {	
+		menuclose();
+		var elem = $('#RoverChains')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#RoverChains").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
+	$('.n-link-9').click(function () {	
+		menuclose();
+		var elem = $('#Token')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#Token").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
+	$('.n-link-10').click(function () {	
+		menuclose();
+		var elem = $('#LM')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#LM").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
+
+	$('.n-link-11').click(function () {	
+		menuclose();
+		var elem = $('#LGE')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#LGE").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
 	
 	
 	

@@ -1067,8 +1067,11 @@
      display: inline-block;
      padding: 0px 24px;
      padding: 8px 0px;
-     margin: 0px 24px;
+     margin: 0px 10px;
      text-align: center;
+}
+#nav-main ul li a.special_nav{
+    color: var(--sub-color);
 }
  #nav-main ul li a, #nav-right ul li a {
     /* position: relative;
@@ -3964,4 +3967,10 @@
     #innovation-stack .stack_partners div img{
         /* max-width: 150px; */
         width: 100%;
+    }
+
+    .fecth_list{
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
     }
