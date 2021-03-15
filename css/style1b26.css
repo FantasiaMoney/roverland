@@ -1347,8 +1347,8 @@
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
-#RoverDao img{
-    border-radius: 25px;
+#RoverOne img{
+    border-radius: 25px !important;
 }
  .undermark.yellow{
      border-bottom:4px solid var(--sub-color);
@@ -3921,7 +3921,7 @@
     } */
      .content-banner-wrap-theme{
          /* min-height: 100vh !important; */
-         padding: 30px 0px;
+         padding: 70px 0px;
          display: table;
          width: 100%;
          /* position: -webkit-sticky;
