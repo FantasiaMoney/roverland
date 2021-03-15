@@ -3821,11 +3821,11 @@
         position: -ms-sticky;
         position: -o-sticky;
         position: sticky;
-        top: 0px;
+        top: 0px;#c0deed
         left: 0px; */
         /* min-height: 100vh !important; */
         /* background: #1f1f24; */
-        background-color: rgb(17, 14, 25);
+        background-color: #c0deed;
         /* box-shadow: 0px 0px 30px 30px #00000038; */
         padding-right: 48px;
         padding-left: 48px;
@@ -3870,7 +3870,7 @@
         /* font-size: 13px; */
         font-size: 34px;
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         /* color: #0f5477; */
         color:var(--sub-color);
         /* color: #FFF; */
@@ -3880,7 +3880,7 @@
         font-size: 24px;
         font-weight: 700;
         line-height: 44px;
-        color: #FFFFFF;
+        color: #5c96b3;
         width: 100%;
         display: inline-block;
         vertical-align: top;
@@ -3890,19 +3890,20 @@
          content:"";
          width: 100px;
          height: 2px;
-         /* background: #0f5477; */
-         background-color: #FFF;
+         /* background: #fff; */
+         background-color: #5c96b3;
          position: absolute;
          bottom: -10px;
     }
      .dog-section-single .dog-section-content p{
         margin-bottom: 15px;
-        /* color: #5d5d5d; */
-        color: #FFF;
+        /* color: #FFF; */
+        color: #5d5d5d;
         width: 100%;
         display: inline-block;
         vertical-align: top;
         font-size: 16px;
+        font-weight: 600;
     }
      .dog-section-single .dog-section-content ul{
         width: 100%;
@@ -3988,4 +3989,25 @@
 	max-height: 350px;
 	width: auto !important;
 	height: auto !important;
+}
+
+.dog-section-single .dog-section-content .section-subtitle{color: #5c96b3;}
+
+.content-banner-wrap.lm-content-banner-wrap{
+	    background: rgb(192 222 237);
+}
+
+.content-banner-wrap.lm-content-banner-wrap h1 span{
+	    color: #5c96b3;
+}
+
+.content-banner-wrap.lm-content-banner-wrap p{
+	margin-bottom: 15px;
+    /* color: #FFF; */
+    color: #5d5d5d;
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    font-weight: 600;
 }
