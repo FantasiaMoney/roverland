@@ -92,14 +92,14 @@
   // stars
   function Star(options) {
     this.size = Math.random() * 2;
-    this.speed = Math.random() * .5;
+    this.speed = Math.random() * 1.0;
     this.x = options.x;
     this.y = options.y;
   }
   
   Star.prototype.reset = function () {
     this.size = Math.random() * 2;
-    this.speed = Math.random() * .5;
+    this.speed = Math.random() * 1.0;
     this.x = width;
     this.y = Math.random() * height;
   };
