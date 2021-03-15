@@ -53,6 +53,7 @@
      line-height: 1.6;
      color: #161b29;
      color: var(--main-color);
+     scroll-behavior: smooth;
 }
 /* TEXT & LINK STYLES *****************************/
  h1, h2, h3, h4, h5, h6 {
@@ -1343,7 +1344,7 @@
      background: var(--new-black-color);
      
 }
- #RoverGib, #RoverOne, #RoverChains, #innovation-stack{
+ #RoverGib, #RoverOne, #RoverChains, #Fecth, #innovation-stack{
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
@@ -3857,7 +3858,7 @@
         text-align: left;
          direction: ltr;
     }
-     .dog-section-single .dog-section-content .section-subtitle, #innovation-stack .section-subtitle {
+     .dog-section-single .dog-section-content .section-subtitle, #innovation-stack .section-subtitle, #Fecth .section-subtitle{
         display: block;
         font-weight: normal;
         text-transform: uppercase;
@@ -3943,20 +3944,21 @@
     
 
     /* innovation stack css */
-    #innovation-stack{
+    #innovation-stack, #Fecth{
         padding: 50px 0px;
     }
     #innovation-stack .stack_partners{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 2rem;
+        margin-top: 1rem;
         flex-wrap: wrap;
     }
     #innovation-stack .stack_partners .partner_image {
         /* display: contents; */
         /* visibility: visible !important; */
         max-width: 150px !important;
+        margin-bottom: 2rem;
     }
     #innovation-stack .stack_partners div img{
         /* max-width: 150px; */

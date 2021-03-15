@@ -45,7 +45,7 @@ $(document).ready(function($) {
 	
 	$('.n-link-1').click(function () {	
 		menuclose();
-		var elem = $('#content-video')[0];		
+		var elem = $('#Fecth')[0];		
 		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
@@ -55,14 +55,14 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-video").offset().top - 56
+				scrollTop: $("#Fecth").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	$('.n-link-2').click(function () {	
 		menuclose();
-		var elem = $('#content-1')[0];		
+		var elem = $('#swap')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -71,14 +71,14 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-1").offset().top - 56
+				scrollTop: $("#swap").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	$('.n-link-3').click(function () {		
 		menuclose();
-		var elem = $('#content-2')[0];		
+		var elem = $('#RoverHouse')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -87,14 +87,14 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-2").offset().top - 56
+				scrollTop: $("#RoverHouse").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	$('.n-link-4').click(function () {	
 		menuclose();
-		var elem = $('#content-3')[0];		
+		var elem = $('#RoverGib')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -103,14 +103,14 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-3").offset().top - 56
+				scrollTop: $("#RoverGib").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	$('.n-link-5').click(function () {		
 		menuclose();
-		var elem = $('#content-team')[0];		
+		var elem = $('#RoverDao')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -119,14 +119,14 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-team").offset().top - 56
+				scrollTop: $("#RoverDao").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	$('.n-link-6').click(function () {	
 		menuclose();
-		var elem = $('#content-legal')[0];		
+		var elem = $('#RoverOne')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -135,12 +135,28 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#content-legal").offset().top - 56
+				scrollTop: $("#RoverOne").offset().top - 56
 			}, 800 );
 		}
 		return false;		
 	});	
 	
+	$('.n-link-7').click(function () {	
+		menuclose();
+		var elem = $('#NFT')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#NFT").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
 	
 	
 	
