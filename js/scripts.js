@@ -45,7 +45,7 @@ $(document).ready(function($) {
 	
 	$('.n-link-1').click(function () {	
 		menuclose();
-		var elem = $('#Fetch')[0];		
+		var elem = $('#swap')[0];		
 		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
@@ -55,14 +55,28 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#Fetch").offset().top - 56
+				scrollTop: $("#swap").offset().top - 56
 			}, 800 );
 		}
+		// menuclose();
+		// var elem = $('#RoverHouse')[0];		
+		// if(!md.is(md.mobile())){
+		// 	elem.scrollIntoView({
+		// 		behavior: "smooth",
+		// 		block: "center",
+		// 		inline: "nearest"
+		// 	});
+		// } else {
+		// 	$('html,body').animate({
+		// 		scrollTop: $("#RoverHouse").offset().top - 56
+		// 	}, 800 );
+		// }
+
 		return false;		
 	});	
 	$('.n-link-2').click(function () {	
 		menuclose();
-		var elem = $('#swap')[0];		
+		var elem = $('#partner')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
 				behavior: "smooth",
@@ -71,7 +85,7 @@ $(document).ready(function($) {
 			});
 		} else {
 			$('html,body').animate({
-				scrollTop: $("#swap").offset().top - 56
+				scrollTop: $("#partner").offset().top - 56
 			}, 800 );
 		}
 		return false;		

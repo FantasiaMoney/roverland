@@ -1354,6 +1354,12 @@
 #RoverOne img{
     border-radius: 25px !important;
 }
+#RoverChains, #LM
+{
+     background-image: url('../images/hexagon.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
  .undermark.yellow{
      border-bottom:4px solid var(--sub-color);
 }
@@ -2238,16 +2244,16 @@
      top: 30px;
      opacity: 1;
      margin: 0px;
-     width: 22px;
+     width: auto;
      height: 22px;
     /* border-radius: 50%;
     */
-     font-size: 12px;
-     line-height: 10px;
+     font-size: 18px;
+     line-height: 5px;
      text-align: center;
      font-weight: 400;
-     color: #FFF;
-     border: 1px solid #FFF;
+     color: #000;
+     border: 1px solid #a7a4a4;
 }
  .modal-header {
      padding: 48px 48px 48px 48px;
@@ -3804,16 +3810,21 @@
     }
      .dog-section{
          width: 100%;
-         float: left;
-         position: relative;
-         font-family: 'Montserrat', sans-serif;
-         /* font-family: 'azo-sans-web', Arial, Helvetica, sans-serif; */
-         background: #c0deed;
-         top: 0px;
-         left: 0px;
+    float: left;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'azo-sans-web', Arial, Helvetica, sans-serif; */
+    background-color: transparent;
+    background-image: url(../images/hexagon.jpg);
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
     }
      .dog-section-single{
         width: 100%;
+
         /* display: table; */
         /* float: left; */
         padding: 25px 0px;
@@ -3826,7 +3837,7 @@
         left: 0px; */
         /* min-height: 100vh !important; */
         /* background: #1f1f24; */
-        background-color: #c0deed;
+        /*background-color: #c0deed;*/
         /* box-shadow: 0px 0px 30px 30px #00000038; */
         padding-right: 48px;
         padding-left: 48px;
