@@ -3529,14 +3529,15 @@
      .modal-full .close-btn-full {
          right: 16px;
     }
-}
- @media (min-width: 400px) and (max-width: 767px) {
-
      .flex-xs-column-reverse .text-left, .flex-xs-column-reverse .text-right, .bg-clouds .text-left, .bg-clouds .text-right{
      list-style: none;
      text-align: center;
      padding-left:0px;
     }
+}
+ @media (min-width: 400px) and (max-width: 767px) {
+
+
 }
  @media (min-width: 320px) and (max-width: 361px) {
 }
