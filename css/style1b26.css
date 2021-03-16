@@ -3825,16 +3825,24 @@
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'azo-sans-web', Arial, Helvetica, sans-serif; */
     background-color: transparent;
-    background-image: url(../images/hexagon.jpg);
+    /*background-image: url(../images/hexagon.jpg);*/
     top: 0px;
     left: 0px;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    }
+
+    .separated-class{
+     background-image:linear-gradient(to left,rgb(92,150,179,.1),rgba(92,150,179,.1)),url(../images/hexagon.jpg)!important;
     }
      .dog-section-single{
         width: 100%;
-
+          background-image: url(../images/hexagon.jpg);
+          background-size:cover;
+          background-position: center;
         /* display: table; */
         /* float: left; */
         padding: 25px 0px;
@@ -3852,9 +3860,30 @@
         padding-right: 48px;
         padding-left: 48px;
         /* display: flex;
+
         justify-content: center; */
     }
-   
+
+    .leftonee{
+     width: 100%;
+          background-image: url(../images/hexagon.jpg)!important;
+          background-size:cover;
+          background-position: center;
+
+    }
+    .rightonee{
+     width: 100%;
+          background-image: url(../images/rightonee.jpg)!important;
+          background-size:cover;
+          background-position: center;
+    }
+
+
+   .rightonee{
+     width:100%;height:auto;
+     background-position: right!important;
+     background-size: cover;
+   }
 
      .dog-section-single .dog-section-left{
         /* width: 50%; */
