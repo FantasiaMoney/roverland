@@ -4023,3 +4023,34 @@
     font-size: 16px;
     font-weight: 600;
 }
+#nav-main .get-modified{
+     position: relative;
+    cursor: pointer;
+    color: #fff !important;
+    line-height: 30px;
+    font-size: var(--button-font);
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* border: 1px solid var(--sub-color); */
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    background: var(--sub-color);
+    text-align: center;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    color: var(--white-color);
+    display: inline-block;
+    text-decoration: none!important;
+    padding: 10px 24px 8px 24px;
+    padding: 9px 24px 9px 24px;
+}
+.stackbtn{
+         margin: 30px auto;
+    display: block !important;
+    text-align: center;
+    width: 155px;
+}
+
+
