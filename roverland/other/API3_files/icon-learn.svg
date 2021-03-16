@@ -1,0 +1,8 @@
+<svg id="icon-learn" xmlns="http://www.w3.org/2000/svg" width="144" height="144" viewBox="0 0 144 144">
+  <rect id="cell" width="144" height="144" fill="none"/>
+  <g id="icon" transform="translate(-7 1.846)">
+    <path id="Trazado_146215" data-name="Trazado 146215" d="M436.327,89.611a40.224,40.224,0,0,1,4.641,41.608l-8.164,19.5a20.768,20.768,0,0,0-.472,14.809l4.11,11.89L401.262,190.1,394.8,168.8H379.635A14.032,14.032,0,0,1,365.6,154.77V140.561h-6.575a2.458,2.458,0,0,1-2.263-3.42l7.59-22.927a40.2,40.2,0,0,1,60.4-34.748" transform="translate(-321.567 -61.177)" fill="none" stroke="#f3f3f3" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Trazado_146485" data-name="Trazado 146485" d="M36.646,0,2.254,33.778-.039,36.03" transform="translate(84.862 11.154)" fill="none" stroke="#646564" stroke-width="1"/>
+    <path id="Trazado_146216" data-name="Trazado 146216" d="M456.223,121.9H441.212V106.884" transform="translate(-356.35 -74.681)" fill="none" stroke="#646564" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
