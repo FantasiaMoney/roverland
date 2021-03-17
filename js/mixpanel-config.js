@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-    const MIX_PANEL_USER_TRACKER_PROJECT_TOKEN = '400c3537dfbc87f8422dd4c1361924e2';
+    const MIX_PANEL_USER_TRACKER_PROJECT_TOKEN = '5db0be9bb18c43c8548382ec35decdf7';
     (function (f, b) {
         if (!b.__SV) {
             var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) {
