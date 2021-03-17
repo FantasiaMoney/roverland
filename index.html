@@ -112,7 +112,7 @@
 		}
 	</style>
 
-
+<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
 </head>
 
 <body>
@@ -158,13 +158,13 @@
 						  </nav>
 						  <nav id="nav-right">
 							 <ul class="banner-social">
-								<li><a href="javascript:void(0)" target="_blank" title="Instagram"><i
+								<li><a href="https://www.instagram.com/rover.capital/" target="_blank" title="Instagram"><i
 								   class="fab fa-instagram"></i></a></li>
 								<li><a href="javascript:void(0)" target="_blank" title="LinkedIn"><i
 								   class="fab fa-linkedin-in"></i></a></li>
 								<li><a href="https://t.me/rovercapital" target="_blank" title="Telegram"><i
 								   class="fab fa-telegram-plane"></i></a></li>
-								<li><a href="javascript:void(0)" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+								<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
 								</li>
 								<li><a href="https://twitter.com/rovercapital?s=21" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
 								</li>
@@ -195,12 +195,40 @@
 														<h2 class="text-white font-lg2 yellow_padding wow fadeInUp" style="padding-left: 50px;" data-wow-duration="2s">Uni<span>fied</span> in One
 															<span>Coin</span></h2>
 														<h2 class="text-white font-lg2 wow fadeInUp">Simpli<span>fied</span> in One <span>Click</span></h2>
+														
 													</div>
 												</div>
 												<div class="banner-header-button wow fadeInUp">
 													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
 												</div>
-											</div>
+												
+												<div class="clock-builder-output"></div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="clock_assets/flipclock.js"></script>
+<style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #140e1a; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #CCCCCC; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #CCCCCC; }</style>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'DailyCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 1616432400 - ((new Date().getTime())/1000); // from: 03/22/2021 10:00 am -0700
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
 										</div>
 									</div>
 								</div>
@@ -253,22 +281,22 @@
 						<div class="col-12">
 							<div class="stack_partners">
 								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo1.png" alt="logo_Nerd.svg">
+									<img src="images/Uniswap.png" alt="logo_Nerd.svg">
+								</div> 
+								<div class="partner_image wow fadeInLeft ">
+									<img src="images/logo6.png" alt="logo_Coin.svg">
 								</div> 
 								<div class="partner_image wow fadeInLeft ">
 									<img src="images/logo2.png" alt="logo_TWA.svg" style="border: 0px solid #fff; border-radius: 50%; background-color: #fff">
 								</div> 
 								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo3.png" alt="logo_Sushi.svg">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
 									<img src="images/logo4.png" alt="logo_Coin.svg">
 								</div> 
 								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo5.png" alt="logo_Uni.svg">
+									<img src="images/logo1.png" alt="logo_Uni.svg">
 								</div> 
 								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo6.png" alt="logo_Uni.svg">
+									<img src="images/EthBnb.png" alt="logo_Uni.svg">
 								</div> 
 							</div>
 						</div>
@@ -633,10 +661,10 @@
 						<div id="footer-bottom">
 
 							<ul class="footer-social wow fadeInUp">
-								<li><a href="javascript:void(0)" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
+								<li><a href="https://www.instagram.com/rover.capital/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
 								<li><a href="javascript:void(0)" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> </li>
 								<li><a href="javascript:void(0)" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
-								<li><a href="javascript:void(0)" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
 								<li><a href="javascript:void(0)" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
 								<li><a href="javascript:void(0)" target="_blank" title="Medium"><i class="fab fa-medium-m"></i></a></li>
 							</ul>
