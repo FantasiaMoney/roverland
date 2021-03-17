@@ -336,3 +336,10 @@ $(document).ready(function($) {
 	
 
 });
+
+
+$(document).ready(function($) {
+	$(".Textfadehome").css("color", "#ffc000");
+
+
+});
