@@ -63,7 +63,8 @@
 }
  h1 {
      font-size: 48px;
-     font-weight: 700;
+     font-weight: 550;
+	 font-variant: small-caps;
      line-height: 1.2;
      margin-bottom: var(--main-pad);
     /* color: var(--sub-color);
@@ -71,7 +72,8 @@
 }
  h2 {
      font-size: 34px;
-     font-weight: 700;
+     font-weight: 600;
+	
     /* text-transform: uppercase;
     */
      line-height: 1.4;
@@ -1351,12 +1353,24 @@
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
+#RoverHouse, #NFT, #Token
+{
+     background-image: url('../images/DarkHex2.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
 #RoverOne img{
     border-radius: 25px !important;
 }
+#RoverDao
+{
+     background-image: url('../images/DarkHex1.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
 #RoverChains, #LM
 {
-     background-image: url('../images/hexagon.jpg');
+     background-image: url('../images/hexagon2.jpg');
      background-repeat: no-repeat;
      background-size: cover;
 }
