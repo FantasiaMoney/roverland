@@ -4166,10 +4166,3 @@ padding-bottom: 0px;
 {
     margin-bottom:20px ;
 }
-@media (min-width:320px) {
-    .banner-main-top h2 .Textfadehome{
-    /* color: white !important; */
-    color: var(--sub-color) !important;
-}
-
-}

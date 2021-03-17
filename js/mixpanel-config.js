@@ -31,18 +31,24 @@ $(document).ready(function ($) {
         event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         console.log("User Clicked on ", getCickedButtonValue);
-        mixpanel.track("User Clicked on " + getCickedButtonValue, {
+        mixpanel.track("Clicked" + getCickedButtonValue, {
             "referrer": document.referrer
         });
+	gtag('event', 'Clicked', {
+		  'source': getClickedButtonValue
+	});
     });
 
     $('#exampleModal a').click(function () {
         event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         console.log("User Clicked on ", getCickedButtonValue);
-        mixpanel.track("User Clicked on " + getCickedButtonValue, {
+        mixpanel.track("Clicked" + getCickedButtonValue, {
             "referrer": document.referrer
         });
+	gtag('event', 'Clicked', {
+		  'source': getClickedButtonValue
+	});
     });
 
 });
