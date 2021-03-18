@@ -30,8 +30,8 @@ $(document).ready(function ($) {
     $('#outer-wrapper a').click(function () {
         event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
-        console.log("User Clicked on ", getCickedButtonValue);
-        mixpanel.track("Clicked" + getCickedButtonValue, {
+        // console.log("User Clicked on ", getCickedButtonValue);
+        mixpanel.track("Clkd" + getCickedButtonValue, {
             "referrer": document.referrer
         });
     });
@@ -39,8 +39,8 @@ $(document).ready(function ($) {
     $('#exampleModal a').click(function () {
         event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
-        console.log("User Clicked on ", getCickedButtonValue);
-        mixpanel.track("Clicked" + getCickedButtonValue, {
+        // console.log("User Clicked on ", getCickedButtonValue);
+        mixpanel.track("Clkd" + getCickedButtonValue, {
             "referrer": document.referrer
         });
     });
