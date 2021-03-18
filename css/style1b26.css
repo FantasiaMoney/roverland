@@ -1183,7 +1183,7 @@
  #banner-wrapper .container {
      position: relative;
      display: flex;
-     min-height: 100vh;
+     min-height:100%;
     /* height: 100vh;
     */
      justify-content: left;
@@ -1639,11 +1639,17 @@
      position: relative;
      display: block;
      text-align: center;
-     padding: 0px 40px;
-     padding: 0px 10%;
+     padding-left: 40px;
+     padding-right: 40px;
+    /* padding: 0px 40px; */
+     /* padding: 0px 10%; */
  
      margin-bottom: var(--lg-pad);
 }
+
+/* .banner-wrapper #innovation-stack{
+    padding: -10px 0px !important;
+} */
  .content-top-center .content-center {
      padding: 0;
 }
@@ -4017,7 +4023,7 @@
     
 
     /* innovation stack css */
-    #innovation-stack, #Fetch{
+   #Fetch{
         padding: 50px 0px;
     }
     #innovation-stack .stack_partners{
