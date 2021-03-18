@@ -20,10 +20,10 @@ $(document).ready(function($) {
 
 	var md = window.md;
 
-	$('.nav-trigger').click(function () {
-		menuopen();
-		return false;
-	});
+	// $('.nav-trigger').click(function () {
+	// 	menuopen();
+	// 	return false;
+	// });
 
 	$('#bg-wrapper').click(function () {
 		menuopen();

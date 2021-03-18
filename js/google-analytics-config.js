@@ -9,7 +9,7 @@ $(document).ready(function ($) {
     // gtag('event', 'screen_view', {});
 
     $('#outer-wrapper a').click(function () {
-        event.preventDefault();
+        // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
         gtag('event', 'screen_view', {
@@ -23,7 +23,7 @@ $(document).ready(function ($) {
 
 
     $('#exampleModal a').click(function () {
-        event.preventDefault();
+        // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
         gtag('event', 'screen_view', {
