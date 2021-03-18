@@ -91,15 +91,15 @@ bgCtx2.fillRect(0, 0, width, height);
 
 // stars
 function Star(options) {
-  this.size = Math.random() * 2;
+  this.size = Math.random() * 2 + 0.5;
   this.speed = Math.random() * 1;
   this.x = options.x;
   this.y = options.y;
 }
 
 Star.prototype.reset = function () {
-  this.size = Math.random() * 2;
-  this.speed = Math.random() * 1;
+  this.size = Math.random() * 2 + 0.5;
+//  this.speed = Math.random() * 1;
   this.x = width;
   this.y = Math.random() * height;
 };
