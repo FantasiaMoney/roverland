@@ -23,6 +23,8 @@
 	<script src="js/jquery.waypoints.min.js" type="text/javascript"></script>
 	<script src="js/mobile-detect.min.js" type="text/javascript"></script>
 	<script src="js/scripts.js" type="text/javascript"></script>
+	<script src="js/mixpanel-config.js" type="text/javascript"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XKCWRHS6D2"></script>
 	<link rel="stylesheet" href="css/wow.css">
 	<script type="text/javascript" src="js/wow.js"></script>
 
@@ -49,18 +51,31 @@
 			});
 		});
 	</script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'G-XKCWRHS6D2');
+
+		gtag('event', 'pageload', {
+			'source':'auto'
+		});
+
+	</script>
 	<style>
 
-	  .modal-p
-	  {
-	  	color: #042c56;
-	    font-weight: 600; 
-	  }
-	  .modal-ul
-	  {
-         list-style: none;
-	      padding-left: 0px;
-	  } 
+
+
+		.modal-p {
+			color: #042c56;
+			font-weight: 600;
+		}
+
+		.modal-ul {
+			list-style: none;
+			padding-left: 0px;
+		}
 
 		.animate-right,
 		.animate-left {
@@ -94,6 +109,8 @@
 		}
 
 		@media (max-width: 767px) {
+
+		
 			.font-lg {
 				font-size: 48px;
 			}
@@ -106,13 +123,14 @@
 			.bg-clouds img {
 				margin-bottom: 60px
 			}
+
 			.yellow_padding {
-    padding-left: 40px !important;
-}
+				padding-left: 40px !important;
+			}
 		}
 	</style>
 
-<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+	<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
 </head>
 
 <body>
@@ -123,56 +141,64 @@
 			<div id="navbar">
 				<div class="container">
 					<div class="navbar-header">
-						<a class="logo-main" href="index.html">
+						<a class="logo-main" href="index.html" value="Home">
 							<span class="logo-main-dark"><img src="images/Rover_logo-min.png"
-						  alt="Rover Capital " /></span>
+									alt="Rover Capital " /></span>
 							<span class="logo-main-light"><img src="images/Rover_logo-min.png"
-						  alt="Rover Capital" /></span>
+									alt="Rover Capital" /></span>
 						</a>
-						<button type="button" class="nav-toggle nav-trigger">
-						  <div class="nav-icon"><span></span></div>
-					   </button>
-					   <div class="nav-wrap">
-						  <nav id="nav-main" class="nav-full">
-							 <ul>
-								<li><a class="n-link-1"  href="javascript:void(0)">Fetch</a></li>
-								<li><a class="n-link-2" href="javascript:void(0)">Swap</a></li>
-								<li><a class="n-link-3" href="javascript:void(0)">House</a></li>
-								<li><a class="n-link-4" href="javascript:void(0)">Gib</a></li>
-								<li><a class="n-link-5" href="javascript:void(0)">Dao</a></li>
-								<li><a class="n-link-6" href="javascript:void(0)">One</a></li>
-								<li><a class="n-link-7" href="javascript:void(0)">NFT</a></li>
-								<li><a class="n-link-8" href="javascript:void(0)">Chains</a></li>
-								<li><a class="n-link-9 special_nav" href="javascript:void(0)">Token</a></li>
-								<li><a class="n-link-10 special_nav" href="javascript:void(0)">LM</a></li>
-								<li><a class="n-link-11 special_nav" href="javascript:void(0)">LGE</a></li>
+						<a type="button" class="nav-toggle nav-trigger" value="Navigation">
+							<div class="nav-icon"><span></span></div>
+						</a>
+						<div class="nav-wrap">
+							<nav id="nav-main" class="nav-full">
+								<ul>
+									<li><a class="n-link-1" href="javascript:void(0)" value="Fetch">Fetch</a></li>
+									<li><a class="n-link-2" href="javascript:void(0)" value="Swap">Swap</a></li>
+									<li><a class="n-link-3" href="javascript:void(0)" value="House">House</a></li>
+									<li><a class="n-link-4" href="javascript:void(0)" value="Gib">Gib</a></li>
+									<li><a class="n-link-5" href="javascript:void(0)" value="Dao">Dao</a></li>
+									<li><a class="n-link-6" href="javascript:void(0)" value="One">One</a></li>
+									<li><a class="n-link-7" href="javascript:void(0)" value="NFT">NFT</a></li>
+									<li><a class="n-link-8" href="javascript:void(0)" value="Chains">Chains</a></li>
+									<li><a class="n-link-9 special_nav" href="javascript:void(0)"
+											value="Token">Token</a></li>
+									<li><a class="n-link-10 special_nav" href="javascript:void(0)" value="LM">LM</a>
+									</li>
+									<li><a class="n-link-11 special_nav" href="javascript:void(0)" value="LGE">LGE</a>
+									</li>
 
-								<!-- <li><a class=" get-modified" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> </li> -->
-							 </ul>
+									<!-- <li><a class=" get-modified" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download value="Navigation Bar Get Notified">Get Notified!</a> </li> -->
+								</ul>
 
 
-									
-													
-												
 
-						  </nav>
-						  <nav id="nav-right">
-							 <ul class="banner-social">
-								<li><a href="https://www.instagram.com/rover.capital/" target="_blank" title="Instagram"><i
-								   class="fab fa-instagram"></i></a></li>
-								<li><a href="javascript:void(0)" target="_blank" title="LinkedIn"><i
-								   class="fab fa-linkedin-in"></i></a></li>
-								<li><a href="https://t.me/rovercapital" target="_blank" title="Telegram"><i
-								   class="fab fa-telegram-plane"></i></a></li>
-								<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
-								</li>
-								<li><a href="https://twitter.com/rovercapital?s=21" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-								</li>
-								<li><a href="https://medium.com/@rovercapital" target="_blank" title="Medium"><i class="fab fa-medium-m"></i></a>
-								</li>
-							 </ul>
-						  </nav>
-					   </div>
+
+
+
+							</nav>
+							<nav id="nav-right">
+								<ul class="banner-social">
+									<li><a href="https://www.instagram.com/rover.capital/" target="_blank"
+											value="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li><a href="javascript:void(0)" target="_blank" value="LinkedIn"
+											title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="https://t.me/rovercapital" target="_blank" value="Telegram"
+											title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
+									<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ"
+											target="_blank" value="YouTube" title="YouTube"><i
+												class="fab fa-youtube"></i></a>
+									</li>
+									<li><a href="https://twitter.com/rovercapital?s=21" target="_blank" value="Twitter"
+											title="Twitter"><i class="fab fa-twitter"></i></a>
+									</li>
+									<li><a href="https://medium.com/@rovercapital" target="_blank" value="Medium"
+											title="Medium"><i class="fab fa-medium-m"></i></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -182,53 +208,107 @@
 						<div class="banner-text-wrap">
 							<div class="container d-block">
 								<div class="row vh-100 row-eq-height animate">
-									<div class="col-md-7 align-self-center">
+									<div class="col-md-7 align-self-md-center align-self-end">
 										<img class="animate-left" src="images/img-1.png" alt="" />
 									</div>
-									<div class="col-md-5 align-self-center">
+									<div class="col-md-5 align-self-md-center ">
 										<div class="banner-text-center">
 											<div class="banner-header text-center ">
 												<div class="banner-header-title">
 													<div class="banner-main-top">
-														<h1 class="text-white font-lg wow fadeInUp backInUp" data-wow-duration="2s">All DeFi & <br>NFT Earnings</h1>
-													
-														<h2 class="text-white font-lg2 yellow_padding wow fadeInUp" style="padding-left: 50px;" data-wow-duration="2s">Uni<span>fied</span> in One
-															<span>Coin</span></h2>
-														<h2 class="text-white font-lg2 wow fadeInUp">Simpli<span>fied</span> in One <span>Click</span></h2>
-														
+														<h1 class="text-white font-lg wow fadeInUp backInUp"
+															data-wow-duration="2s">All DeFi & <br>NFT Earnings</h1>
+
+														<h2 class="text-white font-lg2  wow fadeInUp"
+															data-wow-duration="2s">
+															Uni<span class="Textfadehome">fied</span> in One
+															<span class="Textfadehome">Coin</span>
+														</h2>
+														<h2 class="text-white font-lg2 wow fadeInUp">
+															Simpli<span class="Textfadehome" >fied</span> in One <span class="Textfadehome">Click</span></h2>
+
 													</div>
+														<div class="newclasclock-builder-output">
+												<div class="clock-builder-output">
+												
+												<script type="text/javascript"
+													src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+												<script type="text/javascript" src="clock_assets/flipclock.js"></script>
+												<style text="text/css">
+													body .flip-clock-wrapper ul li a div div.inn,
+													body .flip-clock-small-wrapper ul li a div div.inn {
+														color: #CCCCCC;
+														background-color: #140e1a;
+													}
+
+													body .flip-clock-dot,
+													body .flip-clock-small-wrapper .flip-clock-dot {
+														background: #CCCCCC;
+													}
+
+													body .flip-clock-wrapper .flip-clock-meridium a,
+													body .flip-clock-small-wrapper .flip-clock-meridium a {
+														color: #CCCCCC;
+													}
+												</style>
+												<script type="text/javascript">
+													$(function () {
+														FlipClock.Lang.Custom = { days: 'Days', hours: 'Hours', minutes: 'Minutes', seconds: 'Seconds' };
+														var opts = {
+															clockFace: 'DailyCounter',
+															countdown: true,
+															language: 'Custom'
+														};
+														opts.classes = {
+															active: 'flip-clock-active',
+															before: 'flip-clock-before',
+															divider: 'flip-clock-divider',
+															dot: 'flip-clock-dot',
+															label: 'flip-clock-label',
+															flip: 'flip',
+															play: 'play',
+															wrapper: 'flip-clock-small-wrapper'
+														};
+														var countdown = 1616432400 - ((new Date().getTime()) / 1000); // from: 03/22/2021 10:00 am -0700
+														countdown = Math.max(1, countdown);
+														$('.clock-builder-output').FlipClock(countdown, opts);
+													});
+												</script>
 												</div>
-												<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
 												</div>
 												
-												<div class="clock-builder-output"></div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script type="text/javascript" src="clock_assets/flipclock.js"></script>
-<style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #140e1a; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #CCCCCC; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #CCCCCC; }</style>
-<script type="text/javascript">
-$(function(){
-	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
-	var opts = {
-		clockFace: 'DailyCounter',
-		countdown: true,
-		language: 'Custom'
-	};
-	opts.classes = {
-		active: 'flip-clock-active',
-		before: 'flip-clock-before',
-		divider: 'flip-clock-divider',
-		dot: 'flip-clock-dot',
-		label: 'flip-clock-label',
-		flip: 'flip',
-		play: 'play',
-		wrapper: 'flip-clock-small-wrapper'
-	};  
-	var countdown = 1616432400 - ((new Date().getTime())/1000); // from: 03/22/2021 10:00 am -0700
-	countdown = Math.max(1, countdown);
-	$('.clock-builder-output').FlipClock(countdown, opts);
-});
-</script>
+											<div class="banner-header-button wow fadeInUp buttonresonsive">
+													<a class="button" href="javascript:void(0)" data-toggle="modal"
+														data-target="#exampleModal"
+														value="All DeFi & NFT Earnings Get Notified" download>Get
+														Notified!</a>
+											</div>
+                                              
+                                             
+											</div>
+										</div>
+							
+
+                                    
+												
+                                
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content-wrapper">
+					<div id="content-video" class="content-banner-wrap content-banner-box-shadow">
+						<div class="container">
+							<div class="content-center video-center">
+								<div class="content-center-blk">
+									<div class="video-blk">
+										<div class="video-wrapper wow fadeInUp">
+											<video id="video" class="videoPlayer" controls controlsList="nodownload"
+												autoplay loop poster="images/RyuStill.jpg">
+												<source src="images/rover-video.mp4" type="video/mp4">
+											</video>
 										</div>
 									</div>
 								</div>
@@ -236,90 +316,86 @@ $(function(){
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="content-wrapper">
-				<div id="content-video" class="content-banner-wrap content-banner-box-shadow">
+				<div id="innovation-stack">
 					<div class="container">
-						<div class="content-center video-center">
-							<div class="content-center-blk">
-								<div class="video-blk">
-									<div class="video-wrapper wow fadeInUp">
-										<video id="video" class="videoPlayer" controls controlsList="nodownload"
-											autoplay loop poster="images/RyuStill.jpg">
-											<source src="images/rover-video.mp4" type="video/mp4">
-										</video>
+						<div class="row justify-content-center">
+							<div class="col-12">
+								<div class="section-subtitle wow fadeInUp text-center">Innovation Stack</div>
+							</div>
+							<div class="col-lg-4 col-md-5">
+								<div class="wow fadeInRight">
+									<p class="text-center text-white">Creating a platform that could handle all the many
+										aspects of DeFi under one umbrella required that we build an exchange, money
+										market, yield aggregator, and more. We called this ambitious project our
+										Innovation Stack. Rover combines every facet of Defi & NFTs into a Unified and
+										All-Inclusive ecosystem built to maximize user profit flow with the least
+										friction. Built on the very best financial tools in crypto, Rover’s Innovation
+										Stack is the most ambitious form of “Money Lego” architecture yet in DeFi.</p>
+
+								</div>
+
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button stackbtn" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" value="Innovation Stack Get Notified" download>Get
+										Notified!</a>
+								</div>
+
+
+							</div>
+							<div class="col-12">
+								<div class="wow fadeInLeft">
+									<h2 class="text-center text-white">Built with the Best in Industry</h2>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="stack_partners">
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/Uniswap.png" alt="logo_Nerd.svg">
+									</div>
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/logo6.png" alt="logo_Coin.svg">
+									</div>
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/logo2.png" alt="logo_TWA.svg"
+											style="border: 0px solid #fff; border-radius: 50%; background-color: #fff">
+									</div>
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/logo4.png" alt="logo_Coin.svg">
+									</div>
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/logo1.png" alt="logo_Uni.svg">
+									</div>
+									<div class="partner_image wow fadeInLeft ">
+										<img src="images/EthBnb.png" alt="logo_Uni.svg">
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div id="innovation-stack">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-12">
-							<div class="section-subtitle wow fadeInUp text-center">Innovation Stack</div>
-						</div>
-						<div class="col-lg-4 col-md-5"> 
-							<div class="wow fadeInRight">
-								<p class="text-center text-white">Creating a platform that could handle all the many aspects of DeFi under one umbrella required that we build an exchange, money market, yield aggregator, and more. We called this ambitious project our Innovation Stack. Rover combines every facet of Defi & NFTs into a Unified and All-Inclusive ecosystem built to maximize user profit flow with the least friction. Built on the very best financial tools in crypto, Rover’s Innovation Stack is the most ambitious form of “Money Lego” architecture yet in DeFi.</p>
 
-							</div> 
-
-							<div class="banner-header-button wow fadeInUp">
-													<a class="button stackbtn" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-												</div>
-
-
-						</div>
-						<div class="col-12">
-							<div class="wow fadeInLeft">
-								<h2 class="text-center text-white">Built with the Best in Industry</h2>
-							</div>
-						</div>
-						<div class="col-12">
-							<div class="stack_partners">
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/Uniswap.png" alt="logo_Nerd.svg">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo6.png" alt="logo_Coin.svg">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo2.png" alt="logo_TWA.svg" style="border: 0px solid #fff; border-radius: 50%; background-color: #fff">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo4.png" alt="logo_Coin.svg">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/logo1.png" alt="logo_Uni.svg">
-								</div> 
-								<div class="partner_image wow fadeInLeft ">
-									<img src="images/EthBnb.png" alt="logo_Uni.svg">
-								</div> 
-							</div>
-						</div>
-					</div> 
-				</div>
-			</div>
-			
 			</div>
 
 
 
 			<div class="dog-section">
 
-			  <div id="swap" class="dog-section-single leftonee">
+				<div id="swap" class="dog-section-single leftonee">
 					<div class="row justify-content-center">
-						
+
 						<div class="col-md-5 my-auto">
 
 							<div class="  dog-section-right">
 								<div class="dog-section-content">
 									<div class="section-subtitle wow fadeInUp">Fetch!</div>
+									<a class="button stackbtn fetchbuttonadd" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" value="Innovation Stack Get Notified" download>Get
+										Notified!</a>
 									<div class="section-title wow fadeInUp">One Click Easy</div>
-									<p class="wow fadeInUp">Send BNB. RoverFetch does the rest<br><br>Fetches you Rover tokens at the best price by splitting the buy from our own RoverSwap and our LGE, to reduce slippage while automatically pooling, staking, and compounding APY for you </p>
+									<p class="wow fadeInUp">Send BNB. RoverFetch does the rest<br><br>Fetches you Rover
+										tokens at the best price by splitting the buy from our own RoverSwap and our
+										LGE, to reduce slippage while automatically pooling, staking, and compounding
+										APY for you </p>
 
 									<!-- <a class="button wow fadeInUp" target="_blank" href=" " title="$TRDL ETF">Fetch!
 									</a> -->
@@ -327,10 +403,10 @@ $(function(){
 							</div>
 
 						</div>
-						
-						
-						
-						
+
+
+
+
 						<div class="col-lg-6 col-md-7 my-md-auto mt-5">
 							<div class="dog-section-left">
 								<div class="dog-section-image wow fadeInLeft">
@@ -338,67 +414,71 @@ $(function(){
 								</div>
 							</div>
 						</div>
-						
-						
+
+
 						<div class="dog-section">
-				<div class="container">
-				  <div class="row">
-				    <div class="col-lg-4">
-						<div class="dog-section-image wow fadeInLeft">
-					  <img src="images/img-2.png" />
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="dog-section-image wow fadeInLeft">
+											<img src="images/img-2.png" />
+										</div>
+									</div>
+
+									<div class="col-lg-4">
+
+										<div class="dog-section-content">
+
+											<div class="section-title wow fadeInUp">SWAP</div>
+											<p class="wow fadeInUp">Buys from our own RoverSwap, built on top Uniswap &
+												Pancake, with our additional Defi technology for partnerships and
+												innovation stack integration</p>
+
+
+											<div class="section-title wow fadeInUp">Pool</div>
+											<p class="wow fadeInUp">Fetch the Liquidity Provider (LP) tokens from our
+												Rover/BNB pool</p>
+
+
+											<div class="section-title wow fadeInUp">Stake</div>
+											<p class="wow fadeInUp">Earn a minimum of 1200% APY guaranteed by statking
+												the LP tokens for you</p>
+
+
+											<div class="section-title wow fadeInUp">Compound</div>
+											<p class="wow fadeInUp">Ensure optimal APY as Rover stakes your claimable
+												tokens to compounds APR</p>
+
+
+
+
+
+
+
+										</div>
+
+
+
+									</div>
+
+									<div class="col-lg-4">
+										<div class="dog-section-image wow fadeInLeft">
+											<img src="images/stake-2.png" />
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
-				    </div>
-					  
-				    <div class="col-lg-4">
-					  
-					 <div class="dog-section-content">
-														
-						       	<div class="section-title wow fadeInUp">SWAP</div>
-						 <p class="wow fadeInUp">Buys from our own RoverSwap, built on top Uniswap & Pancake, with our additional Defi technology for partnerships and innovation stack integration</p>
-																			
-					 		
-								<div class="section-title wow fadeInUp">Pool</div>
-						 <p class="wow fadeInUp">Fetch the Liquidity Provider (LP) tokens from our Rover/BNB pool</p>
-						  
-							
-					        	<div class="section-title wow fadeInUp">Stake</div>
-						 <p class="wow fadeInUp">Earn a minimum of 1200% APY guaranteed by statking the LP tokens for you</p>
-						  
-						
-							<div class="section-title wow fadeInUp">Compound</div>
-						<p class="wow fadeInUp">Ensure optimal APY as Rover stakes your claimable tokens to compounds APR</p>
-							
-							
-											
-								
-								
 
-									
-					  </div>
-				
-					
-					  
-					 </div>
-				   
-				    <div class="col-lg-4"><div class="dog-section-image wow fadeInLeft">
-									<img src="images/stake-2.png" />
+
 					</div>
-				  
-					  </div>
-			     </div>
-			</div>
-			</div>
+				</div>
 
-						
-		</div>
-	</div>
 
-			
-				
-				
 
-				<section id="partner" class="content-banner-wrap content-banner-box-shadow content-banner-wrap-theme animate">
 
+<<<<<<< HEAD
 				<div class="content-banner-wrap content-banner-box-shadow py-0">
 					<canvas id="bgCanvas2"></canvas>
 					<div class="container">
@@ -417,34 +497,69 @@ $(function(){
 								<p class="wow fadeInUp">50% of contributor earnings goes to Rover. The contributor can have its own LD. Rover helps with operations</p> 
 								<h3 class="wow fadeInUp">White-Label</h3>
 								<p class="wow fadeInUp">Use our LD & get % for your contribution</p>
+=======
+>>>>>>> cf8b7429de724c1b3486893f83b2322a8e762b47
 
-								<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+				<section id="partner"
+					class="content-banner-wrap content-banner-box-shadow content-banner-wrap-theme animate">
 
+					<div class="content-banner-wrap content-banner-box-shadow py-0">
+						<canvas id="bgCanvas2"></canvas>
+						<div class="container">
+							<div class="row vh-100 row-eq-height">
+								<div class="col-md-6 align-self-center text-center ">
+									<img src="images/Johnny.png" alt="" class=" wow fadeInLeft" />
+								</div>
+								<div class="col-md-6 align-self-center text-white wow fadeInUp mt-md-0 mt-5">
+									<h1 class="wow fadeInUp"><span>Rover Swap</span></h1>
+									<h2 class="wow fadeInUp">Partners Program</h2>
+									<h3 class="wow fadeInUp">Token rev share</h3>
+									<p class="wow fadeInUp">Our very own DEX, RoverSwap integrates the power of Uniswap
+										and Pancake with our innovative Partners Program, incentivizing a flow of
+										long-term liquidity and profit to contributing partners and users.</p>
+									<h3 class="wow fadeInUp">Platform rev share</h3>
+									<p class="wow fadeInUp">Buy & stake x% of Rover to redirect x% of Rover’s platform
+										revenue</p>
+									<h3 class="wow fadeInUp">Contributor</h3>
+									<p class="wow fadeInUp">50% of contributor earnings goes to Rover. The contributor
+										can have its own LD. Rover helps with operations</p>
+									<h3 class="wow fadeInUp">White-label</h3>
+									<p class="wow fadeInUp">Use our LD & get % for your contribution</p>
+
+									<div class="banner-header-button wow fadeInUp">
+										<a class="button" href="javascript:void(0)" data-toggle="modal"
+											value="Rover Swap Get Notified" data-target="#exampleModal" download>Get
+											Notified!</a>
+									</div>
+
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
 
-				<section id="RoverHouse" class="content-banner-wrap content-banner-box-shadow content-banner-wrap-theme animate">
+				<section id="RoverHouse"
+					class="content-banner-wrap content-banner-box-shadow content-banner-wrap-theme animate">
 					<div class="container">
 						<div class="row row-eq-height flex-xs-column-reverse">
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>RoverHouse</span></h1>
 								<h2 class="wow fadeInUp text-white">Maximize Yield</h2>
 								<h3 class="wow fadeInUp text-white">Hunt & Aggregate Yield</h3>
-								<p>ROVER’s vault strategies automate maximum yield using RoverHunt strategies. New hunting strategies are voted into RoverHouse by ROVER token holders, thus incentivizing holding positions and increasing demand for ROVER.</p>
+								<p>ROVER’s vault strategies automate maximum yield using RoverHunt strategies. New
+									hunting strategies are voted into RoverHouse by ROVER token holders, thus
+									incentivizing holding positions and increasing demand for ROVER.</p>
 
 								<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="RoverHouse Get Notified">Get
+										Notified!</a>
+								</div>
 
-							</div> 
+							</div>
 							<div class="col-md-6 align-self-center text-center">
 								<img src="images/House-2.png" alt="" class="left-right-image wow fadeInRight" />
-							</div> 
+							</div>
 						</div>
 					</div>
 				</section>
@@ -453,16 +568,25 @@ $(function(){
 					<div class="container">
 						<div class="row  row-eq-height">
 							<div class="col-md-6 align-self-center text-center">
-								<img src="images/Grogu-2.png" alt="" class="  rovergib-left-right-image wow fadeInLeft" />
+								<img src="images/Grogu-2.png" alt=""
+									class="  rovergib-left-right-image wow fadeInLeft" />
 							</div>
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>RoverGib</span></h1>
 								<h2 class="wow fadeInUp">Borrow/Lend</h2>
 								<h3 class="wow fadeInUp">Use Rover’s own Aave & Compound</h3>
-								<p>Rover’s Money Market protocol RoverGib expands the playing field to include borrowing and lending on a myriad of DeFi assets. Like Aave, Maker, and Compound, RoverGib creates markets for various assets. Lenders earn interest on otherwise idle crypto assets, while Borrowers can take out collateralized loans or employ flash loans for various positioning and leveraging strategies. RoverGib also becomes the first pillar in a substack of platforms which facilitates complete integration of assets, commodities, NFTs and more.</p>
+								<p>Rover’s Money Market protocol RoverGib expands the playing field to include borrowing
+									and lending on a myriad of DeFi assets. Like Aave, Maker, and Compound, RoverGib
+									creates markets for various assets. Lenders earn interest on otherwise idle crypto
+									assets, while Borrowers can take out collateralized loans or employ flash loans for
+									various positioning and leveraging strategies. RoverGib also becomes the first
+									pillar in a substack of platforms which facilitates complete integration of assets,
+									commodities, NFTs and more.</p>
 								<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="RoverGib Get Notified">Get
+										Notified!</a>
+								</div>
 							</div>
 
 						</div>
@@ -476,11 +600,15 @@ $(function(){
 								<h1 class="wow fadeInUp"><span>RoverDao</span></h1>
 								<h2 class="wow fadeInUp">Governance</h2>
 								<h3 class="wow fadeInUp">Govern all the things</h3>
-								<p>ROVER is being created to uphold the principles of Defi. Holders of the ROVER token thus become part of the decentralized governing organization RoverDao, which makes decisions on behalf of the protocol. </p>
+								<p>ROVER is being created to uphold the principles of Defi. Holders of the ROVER token
+									thus become part of the decentralized governing organization RoverDao, which makes
+									decisions on behalf of the protocol. </p>
 
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="RoverDao Get Notified">Get
+										Notified!</a>
+								</div>
 
 							</div>
 
@@ -503,11 +631,16 @@ $(function(){
 								<h1 class="wow fadeInUp"><span>RoverOne</span></h1>
 								<h2 class="wow fadeInUp">Mirror Maker</h2>
 								<h3 class="wow fadeInUp">Synthetix, Maker & Mirror, focused into one lens</h3>
-								<p>Whereas Money Markets are somewhat limited in the types of assets that can be exchanged or borrowed against, RoverOne expands opportunities by taking in more inputs and offering more outputs, such as synthetics, mirror derivatives, inverses and commodities. </p>
+								<p>Whereas Money Markets are somewhat limited in the types of assets that can be
+									exchanged or borrowed against, RoverOne expands opportunities by taking in more
+									inputs and offering more outputs, such as synthetics, mirror derivatives, inverses
+									and commodities. </p>
 
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="RoverOne Get Notified">Get
+										Notified!</a>
+								</div>
 
 							</div>
 						</div>
@@ -519,13 +652,18 @@ $(function(){
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>NFT</span></h1>
 								<h2 class="wow fadeInUp">Bridge Defi to NFT</h2>
-								<h3 class="wow fadeInUp">Trade NFT across marketplaces with <br>  Full Defi benefits</h3>
-								<p>The current explosion of NFTs in the marketplace has created the first real gateway between mainstream everyday people and the heretofore esoteric and somewhat self-enclosed world of decentralized finance. With this comes unprecedented potential for growth in Defi, as capital floods into the space from new outside sources. RoverNFT creates the bridge which allows users to bring their NFTs </p>
+								<h3 class="wow fadeInUp">Trade NFT across marketplaces with <br> Full Defi benefits</h3>
+								<p>The current explosion of NFTs in the marketplace has created the first real gateway
+									between mainstream everyday people and the heretofore esoteric and somewhat
+									self-enclosed world of decentralized finance. With this comes unprecedented
+									potential for growth in Defi, as capital floods into the space from new outside
+									sources. RoverNFT creates the bridge which allows users to bring their NFTs </p>
 
 
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="NFT Get Notified">Get Notified!</a>
+								</div>
 
 							</div>
 							<div class="col-md-6 align-self-center text-center">
@@ -536,8 +674,14 @@ $(function(){
 					</div>
 				</section>
 
+<<<<<<< HEAD
 				<section id="RoverChains" class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate  animate">
 					<div class="container">
+=======
+				<section id="RoverChains"
+					class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate animate">
+					<div class="container dog-section-single">
+>>>>>>> cf8b7429de724c1b3486893f83b2322a8e762b47
 						<div class="row row-eq-height">
 							<div class="col-md-6 align-self-center text-center">
 								<img src="images/ChainDog-1.png" alt="" class="left-right-image wow fadeInLeft" >
@@ -551,8 +695,22 @@ $(function(){
 									<li>L2 DEX & Der Games</li>
 									<li>Social NFTs </li>
 								</ul>
+<<<<<<< HEAD
 								<p> Integrated with RoverNFT, RoverChains on L2 provides a superior experience for users with faster transaction times and lower fees, while bringing on-chain and off-chain game items into the DeFi marketplace. This in turn creates a market for DEXs, derivatives, and more, which drives even more capital into this already booming sector of decentralized finance. </p>
 							  </div>
+=======
+								<p> Integrated with RoverNFT, RoverChains on L2 provides a superior experience for users
+									with faster transaction times and lower fees, while bringing on-chain and off-chain
+									game items into the DeFi marketplace. This in turn creates a market for DEXs,
+									derivatives, and more, which drives even more capital into this already booming
+									sector of decentralized finance. </p>
+
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="RoverChains Get Notified">Get
+										Notified!</a>
+								</div>
+>>>>>>> cf8b7429de724c1b3486893f83b2322a8e762b47
 
 							</div>
 							
@@ -566,66 +724,80 @@ $(function(){
 				<section id="Token" class="content-banner-wrap content-banner-box-shadow animate  animate">
 					<div class="container">
 						<div class="row row-eq-height flex-xs-column-reverse">
-							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5" >
-								<h1 class="wow fadeInUp" ><span>Token</span></h1>
-								<h2 class="wow fadeInUp" >Supply</h2> 
+							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
+								<h1 class="wow fadeInUp"><span>Token</span></h1>
+								<h2 class="wow fadeInUp">Supply</h2>
 								<ul class="wow fadeInUp text-white  text-left">
 									<li>100M Max </li>
 									<li>No Admin Keys</li>
 									<li>No Team Tokens</li>
 									<li>Burn Unsold Tokens</li>
-								</ul> 
-								<h2 class="wow fadeInUp" >Utility</h2>
-								<p>ROVER Token has the combined utility & revenue of all the Defi & NFT platforms that Rover offers, from its own version and TLV in Uniswap/Pancake, Yearn, Aave, Synthetix, Mirror, Maker, to its own upcoming L2 DEX, derivatives & games, as Rover bridges Defi & NFTs</p> 
+								</ul>
+								<h2 class="wow fadeInUp">Utility</h2>
+								<p>ROVER Token has the combined utility & revenue of all the Defi & NFT platforms that
+									Rover offers, from its own version and TLV in Uniswap/Pancake, Yearn, Aave,
+									Synthetix, Mirror, Maker, to its own upcoming L2 DEX, derivatives & games, as Rover
+									bridges Defi & NFTs</p>
 
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="Token & Supply Get Notified">Get
+										Notified!</a>
+								</div>
 
 							</div>
 							<div class="col-md-6 align-self-center text-center ">
-								<img src="images/RoverCoin.png" alt="" class=" left-right-image wow fadeInRight" >
+								<img src="images/RoverCoin.png" alt="" class=" left-right-image wow fadeInRight">
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section id="LM" class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate  animate">
+				<section id="LM"
+					class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate  animate">
 					<div class="container">
 						<div class="row row-eq-height">
 							<div class="col-md-6 align-self-center text-center">
-								<img src="images/pool.png" alt="" class="left-right-image wow fadeInLeft" >
+								<img src="images/pool.png" alt="" class="left-right-image wow fadeInLeft">
 							</div>
-							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5" >
-								<h1 class="wow fadeInUp" ><span>Liquidity Mining</span></h1>
-								<p>1200%+ APY guaranteed minimum. Stakers can claim rewards at the end of the first month</p>
-								<p>5x Time Bonus. Early LM miners earn up 400% extra over 30 days, relative to late stakers</p>
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
+								<h1 class="wow fadeInUp"><span>Liquidity Mining</span></h1>
+								<p>1200%+ APY guaranteed minimum. Stakers can claim rewards at the end of the first
+									month</p>
+								<p>5x Time Bonus. Early LM miners earn up 400% extra over 30 days, relative to late
+									stakers</p>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download value="Liquidity Mining Get Notified">Get
+										Notified!</a>
+								</div>
 
 							</div>
-							
+
 						</div>
 					</div>
 				</section>
 
 
-				<section id="LGE" class="content-banner-wrap content-banner-box-shadow animate  animate" style="background-color: #030303;">
+				<section id="LGE" class="content-banner-wrap content-banner-box-shadow animate  animate"
+					style="background-color: #030303;">
 					<div class="container">
 						<div class="row row-eq-height flex-xs-column-reverse">
-							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5" >
-								<h1 class="wow fadeInUp" ><span>Liquidity Generation Event (LGE)</span></h1>
-								<p>25% of the 100M supple, or 25M tokens, will be sold, at maximum. <br> <br> Unsold will be burned.</p>
+							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
+								<h1 class="wow fadeInUp"><span>Liquidity Generation Event (LGE)</span></h1>
+								<p>25% of the 100M supple, or 25M tokens, will be sold, at maximum. <br> <br> Unsold
+									will be burned.</p>
 								<p>25% goes to Liquidity Mining (LM) for the first 30 days</p>
 
-									<div class="banner-header-button wow fadeInUp">
-													<a class="button" href="javascript:void(0)"  data-toggle="modal" data-target="#exampleModal" download>Get Notified!</a> 
-							  </div>
+								<div class="banner-header-button wow fadeInUp">
+									<a class="button" href="javascript:void(0)" data-toggle="modal"
+										data-target="#exampleModal" download
+										value="Liquidity Generation Event (LGE) Get Notified">Get Notified!</a>
+								</div>
 
 							</div>
 							<div class="col-md-6 align-self-center text-center ">
-								<img src="images/LGEgif-2.gif" alt="" class="rovergib-left-right-image wow fadeInRight" >
+								<img src="images/LGEgif-2.gif" alt="" class="rovergib-left-right-image wow fadeInRight">
 							</div>
 						</div>
 					</div>
@@ -634,7 +806,7 @@ $(function(){
 
 
 				<div id="footer" class="content-banner-box-shadow">
-					
+
 					<div class="container">
 						<div class="footer-content">
 							<div class="footer-logo-main wow fadeInUp">
@@ -644,29 +816,35 @@ $(function(){
 							</div>
 							<div class="footer-menu">
 								<ul class="footer-menu-list wow fadeInUp">
-									<li><a class="n-link-1" href="javascript:void(0)">Fetch</a></li>
-									<li><a class="n-link-2" href="javascript:void(0)">Swap</a></li>
-									<li><a class="n-link-3" href="javascript:void(0)">House</a></li>
-									<li><a class="n-link-4" href="javascript:void(0)">Gib</a></li>
-									<li><a class="n-link-5" href="javascript:void(0)">Dao</a></li>
-									<li><a class="n-link-6" href="javascript:void(0)">One</a></li>
-									<li><a class="n-link-7" href="javascript:void(0)">NFT</a></li>
-									<li><a class="n-link-8" href="javascript:void(0)">Chains</a></li>
-									<li><a class="n-link-9" href="javascript:void(0)">Token</a></li>
-									<li><a class="n-link-10" href="javascript:void(0)">LM</a></li>
-									<li><a class="n-link-11" href="javascript:void(0)">LGE</a></li>
+									<li><a class="n-link-1" href="javascript:void(0)" value="Fetch">Fetch</a></li>
+									<li><a class="n-link-2" href="javascript:void(0)" value="Swap">Swap</a></li>
+									<li><a class="n-link-3" href="javascript:void(0)" value="House">House</a></li>
+									<li><a class="n-link-4" href="javascript:void(0)" value="Gib">Gib</a></li>
+									<li><a class="n-link-5" href="javascript:void(0)" value="Dao">Dao</a></li>
+									<li><a class="n-link-6" href="javascript:void(0)" value="One">One</a></li>
+									<li><a class="n-link-7" href="javascript:void(0)" value="NFT">NFT</a></li>
+									<li><a class="n-link-8" href="javascript:void(0)" value="Chains">Chains</a></li>
+									<li><a class="n-link-9" href="javascript:void(0)" value="Token">Token</a></li>
+									<li><a class="n-link-10" href="javascript:void(0)" value="LM">LM</a></li>
+									<li><a class="n-link-11" href="javascript:void(0)" value="LGE">LGE</a></li>
 								</ul>
 							</div>
 						</div>
 						<div id="footer-bottom">
 
 							<ul class="footer-social wow fadeInUp">
-								<li><a href="https://www.instagram.com/rover.capital/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a> </li>
-								<li><a href="javascript:void(0)" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a> </li>
-								<li><a href="javascript:void(0)" target="_blank" title="Telegram"><i class="fab fa-telegram-plane"></i></a></li>
-								<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a></li>
-								<li><a href="javascript:void(0)" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="javascript:void(0)" target="_blank" title="Medium"><i class="fab fa-medium-m"></i></a></li>
+								<li><a href="https://www.instagram.com/rover.capital/" target="_blank" value="Instagram"
+										title="Instagram"><i class="fab fa-instagram"></i></a> </li>
+								<li><a href="javascript:void(0)" target="_blank" value="LinkedIn" title="LinkedIn"><i
+											class="fab fa-linkedin-in"></i></a> </li>
+								<li><a href="javascript:void(0)" target="_blank" value="Telegram" title="Telegram"><i
+											class="fab fa-telegram-plane"></i></a></li>
+								<li><a href="https://www.youtube.com/channel/UCY-sZVxcIhQfI8K3Hp2HGnQ" target="_blank"
+										value="YouTube" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+								<li><a href="javascript:void(0)" target="_blank" value="Twitter" title="Twitter"><i
+											class="fab fa-twitter"></i></a></li>
+								<li><a href="javascript:void(0)" target="_blank" value="Medium" title="Medium"><i
+											class="fab fa-medium-m"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -674,42 +852,49 @@ $(function(){
 			</div>
 		</div>
 	</div>
-	
-	
-	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-		<div class="modal-content"  style="background-image: url('images/huge.jpg'); background-repeat: no-repeat;
+
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content" style="background-image: url('images/huge.jpg'); background-repeat: no-repeat;
     background-size: cover;">
-		  <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
-			</button>
-		  </div>
-		  <div class="modal-body">
-		  	<div class=row>
-		  		<div class="col-md-6">
-				<img src="images/Stick.png">
-			</div>
-		  		<div class="col-md-6" style="display: grid; align-items: center;">
-				
-			 <h3>Follow Us</h3>
-			 <ul class="modal-ul">
-			 	<li class="modal-p"><a href="https://twitter.com/rovercapital?s=21" target="_blank">Twitter</a></li>
-			 	<li class="modal-p"><a href="https://t.me/rovercapital" target="_blank">Telegram News</a> </li>
-			 	<li class="modal-p"><a href="https://t.me/roverchat" target="_blank">Telegram Chat</a></li>
-			 </ul>
-			  
+				<div class="modal-header">
+					<a type="button" class="close" data-dismiss="modal" value="Get Notified Pop-up Closed"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</a>
+				</div>
+				<div class="modal-body">
+					<div class=row>
+						<div class="col-md-6">
+							<img src="images/Stick.png">
 						</div>
-			
-		  	</div>
-			
-		  </div>
-		  <div class="modal-footer">
-			<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<div class="col-md-6" style="display: grid; align-items: center;">
+
+							<h3>Follow Us</h3>
+							<ul class="modal-ul">
+								<li class="modal-p"><a href="https://twitter.com/rovercapital?s=21" target="_blank"
+										value="Follow us Twitter">Twitter</a></li>
+								<li class="modal-p"><a href="https://t.me/rovercapital" target="_blank"
+										value="Follow us Telegram">Telegram
+										News</a> </li>
+								<li class="modal-p"><a href="https://t.me/roverchat" target="_blank"
+										value="Follow us Telegram Chat">Telegram Chat</a>
+								</li>
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+				<div class="modal-footer">
+					<!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 			<button type="button" class="btn btn-primary">Save changes</button> -->
-		  </div>
+				</div>
+			</div>
 		</div>
-	  </div>
 	</div>
 	<script>
 		//wow-animation

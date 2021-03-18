@@ -817,7 +817,7 @@
      border: 1px solid #B2B2B2;
      border-top: 1px solid #FFFFFF;
 }
- .selectric-open. .selectric-items {
+ .selectric-open .selectric-items {
      background: #FFFFFF;
 }
  .form-select .selectric .label {
@@ -2971,6 +2971,8 @@
          padding-left: 24px;
          padding-right: 24px;
     }
+
+
      #navbar .container {
          padding-left: 24px;
          padding-right: 24px;
@@ -4111,4 +4113,63 @@
 
 .fadeInUp{
      animation-delay: 1s!important;
+}
+
+
+/* New CSS  */
+
+.flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, body .flip-clock-small-wrapper ul li a div div.inn
+
+{
+    color:yellow !important;
+}
+.flip-clock-label
+{
+    color: var(--sub-color);
+}
+
+.fetchbuttonadd
+{
+    margin: 0%;
+}
+.new_clock-builder-output
+{
+ padding-left: 34%;
+ padding-right: 34%;
+}
+
+.logo-main-light,.logo-main-dark
+{
+    width: 110%;
+}
+
+#RoverChains
+{
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+
+/* .clock-builder-output
+{
+    padding-left: 15%;
+} */
+
+.newclasclock-builder-output
+{
+    
+    display: inline-block;
+    text-align: justify;
+}
+
+.buttonresonsive
+{
+    margin-bottom:20px ;
+}
+@media (min-width:320px) {
+    .banner-main-top h2 .Textfadehome{
+     color: white ;
+    /* color: var(--sub-color) !important; */
+}
+
 }
