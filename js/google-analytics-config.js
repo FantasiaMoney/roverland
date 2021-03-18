@@ -15,8 +15,8 @@ $(document).ready(function ($) {
         gtag('event', 'screen_view', {
             'screen_name': getCickedButtonValue
         });
-        gtag('event', "User Clicked on " + getCickedButtonValue, {
-            'source': 'swap'
+        gtag('event', "Clkd" + getCickedButtonValue, {
+            'source': getCickedButtonValue
         });
     });
     
@@ -29,8 +29,8 @@ $(document).ready(function ($) {
         gtag('event', 'screen_view', {
             'screen_name': getCickedButtonValue
         });
-        gtag('event', "User Clicked on " + getCickedButtonValue, {
-            'source': 'swap'
+        gtag('event', "Clkd" + getCickedButtonValue, {
+            'source': getCickedButtonValue
         });
     });
 
