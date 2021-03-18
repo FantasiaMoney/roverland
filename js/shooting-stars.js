@@ -169,8 +169,8 @@ for (var i = 0; i < height; i++) {
 // Add 2 shooting stars that just cycle.
 entities.push(new ShootingStar());
 entities.push(new ShootingStar());
-entities.push(new Terrain({ mHeight: height - 250 }));
-entities.push(new Terrain({ displacement: 120, scrollDelay: 50, fillStyle: "rgb(17,20,40)", mHeight: height - 200 }));
+entities.push(new Terrain({ mHeight: height - 350 }));
+entities.push(new Terrain({ displacement: 150, scrollDelay: 50, fillStyle: "rgb(17,20,40)", mHeight: height - 250 }));
 entities.push(new Terrain({ displacement: 100, scrollDelay: 20, fillStyle: "#110E19", mHeight: height - 150 }));
 
 //animate background
