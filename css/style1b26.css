@@ -871,7 +871,7 @@
      opacity: 0;
      width: 100%;
      height: 100%;
-     z-index: 0;
+     z-index: 10;
      background: var(--main-color);
 }
  .menu-open #bg-wrapper {
@@ -924,7 +924,7 @@
      width: 100%;
      padding: 12px 24px;
      top: 0px;
-     z-index: 10;
+     z-index: 99;
      background: #FFFFFF;
 }
  #navbar.sticky {
@@ -1048,7 +1048,7 @@
      display: inline-block;
 }
  #nav-right {
-     /*position: relative;*/
+     position: relative;
      display: flex;
      margin-left: auto;
 }
@@ -1065,7 +1065,7 @@
      margin: 8px 0px;
 }
  #nav-main ul li, #nav-right ul li {
-     /*osition: relative;p*/
+     position: relative;
      display: inline-block;
      padding: 0px 24px;
      padding: 8px 0px;
@@ -1087,7 +1087,6 @@
      -webkit-transition: all 0.2s ease;
      transition: all 0.2s ease;
      cursor: pointer;
-     z-index:9999;
 }
  #nav-main ul li a {
      letter-spacing: 1px;
@@ -3610,12 +3609,16 @@
          display: block;
          align-self: flex-end;
          margin-left: auto;
+         /*background:white;*/
+         /*color:black;*/
+         padding:5px;
     }
      .nav-trigger-light {
          display: block;
     }
      .nav-trigger-dark {
          display: none;
+
     }
      .sub-page .nav-toggle .nav-trigger-light {
     }
@@ -3684,16 +3687,18 @@
     }
      .home-wrap .nav-icon span, .home-wrap .nav-icon span::before, .home-wrap .nav-icon span::after {
          background: var(--white-color);
+         /*background:red;*/
+         /*background:blue;*/
     }
      .home-wrap .sticky .nav-icon span, .home-wrap .sticky .nav-icon span::before, .home-wrap .sticky .nav-icon span::after {
-         background: var(--main-color);
+         /*background: var(--main-color);*/
+         /*background:yellow;*/
     }
      .menu-open .nav-icon span, .home-wrap.menu-open .nav-icon span {
-         background: none !important;
+         /*background: none !important;*/
+         /*background:green;*/
     }
-     .menu-open .nav-icon span, .menu-open .nav-icon span::before, .menu-open .nav-icon span::after, .menu-open .home-wrap .sticky .nav-icon span::before, .menu-open .home-wrap .sticky .nav-icon span::after {
-         background: var(--white-color);
-    }
+     
      #nav-main ul {
          align-self: center;
          margin: 0px 0px 0px 0px;
@@ -4183,3 +4188,12 @@ padding-bottom: 0px;
 }
 
 
+.for-leter-space{
+     margin-left:50px;
+}
+/*.coinn{
+     margin-left:0px;
+}
+.fied{
+     margin-left:50px;
+}*/
