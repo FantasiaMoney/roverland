@@ -1072,9 +1072,9 @@
      margin: 0px 10px;
      text-align: center;
 }
-#nav-main ul li a.special_nav{
+/* #nav-main ul li a.special_nav{
     color: var(--sub-color);
-}
+} */
  #nav-main ul li a, #nav-right ul li a {
     /* position: relative;
     */
