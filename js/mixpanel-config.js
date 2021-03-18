@@ -34,9 +34,6 @@ $(document).ready(function ($) {
         mixpanel.track("Clicked" + getCickedButtonValue, {
             "referrer": document.referrer
         });
-	gtag('event', 'Clicked', {
-		  'source': getClickedButtonValue
-	});
     });
 
     $('#exampleModal a').click(function () {
@@ -46,9 +43,6 @@ $(document).ready(function ($) {
         mixpanel.track("Clicked" + getCickedButtonValue, {
             "referrer": document.referrer
         });
-	gtag('event', 'Clicked', {
-		  'source': getClickedButtonValue
-	});
     });
 
 });
