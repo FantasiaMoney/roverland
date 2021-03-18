@@ -1246,8 +1246,8 @@
      opacity: 0;
      -webkit-animation: btm-fade-animate 1.2s ease-out forwards;
      animation: btm-fade-animate 1.2s ease-out forwards;
-     -webkit-animation-delay: 0.8s;
-     animation-delay: 0.8s;
+     -webkit-animation-delay: 0.1s;
+     animation-delay: 0.1s;
 }
  .banner-header-button .button {
      box-shadow: 0px 0px 30px var(--shadow-color);
@@ -4119,7 +4119,7 @@
 
 
 .fadeInUp{
-     animation-delay: 1s!important;
+     /* animation-delay: 0.2s!important; */
 }
 
 
