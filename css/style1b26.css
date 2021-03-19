@@ -4213,6 +4213,14 @@ padding-bottom: 0px;
     {
         height: 250vh !important;
     }
+    .font-lg {
+        font-size: 40px;
+    }
+
+    .font-lg2 {
+        font-size: 30px;
+        padding: 0 !important;
+    }
 
    
     }
@@ -4223,7 +4231,15 @@ padding-bottom: 0px;
         {
             height: 150vh !important;
         }
-    
+        .font-lg {
+            font-size: 40px;
+        }
+
+        .font-lg2 {
+            font-size: 30px;
+            padding: 0 !important;
+        }
+
        
         }
         .for-leter-space{
