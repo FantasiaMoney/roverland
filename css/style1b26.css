@@ -1246,8 +1246,8 @@
      opacity: 0;
      -webkit-animation: btm-fade-animate 1.2s ease-out forwards;
      animation: btm-fade-animate 1.2s ease-out forwards;
-     -webkit-animation-delay: 0.8s;
-     animation-delay: 0.8s;
+     -webkit-animation-delay: 0.1s;
+     /* animation-delay: 0.1s; */
 }
  .banner-header-button .button {
      box-shadow: 0px 0px 30px var(--shadow-color);
@@ -3609,12 +3609,16 @@
          display: block;
          align-self: flex-end;
          margin-left: auto;
+         /*background:white;*/
+         /*color:black;*/
+         padding:5px;
     }
      .nav-trigger-light {
          display: block;
     }
      .nav-trigger-dark {
          display: none;
+
     }
      .sub-page .nav-toggle .nav-trigger-light {
     }
@@ -3683,16 +3687,18 @@
     }
      .home-wrap .nav-icon span, .home-wrap .nav-icon span::before, .home-wrap .nav-icon span::after {
          background: var(--white-color);
+         /*background:red;*/
+         /*background:blue;*/
     }
      .home-wrap .sticky .nav-icon span, .home-wrap .sticky .nav-icon span::before, .home-wrap .sticky .nav-icon span::after {
-         background: var(--main-color);
+         /*background: var(--main-color);*/
+         /*background:yellow;*/
     }
      .menu-open .nav-icon span, .home-wrap.menu-open .nav-icon span {
-         background: none !important;
+         /*background: none !important;*/
+         /*background:green;*/
     }
-     .menu-open .nav-icon span, .menu-open .nav-icon span::before, .menu-open .nav-icon span::after, .menu-open .home-wrap .sticky .nav-icon span::before, .menu-open .home-wrap .sticky .nav-icon span::after {
-         background: var(--white-color);
-    }
+     
      #nav-main ul {
          align-self: center;
          margin: 0px 0px 0px 0px;
@@ -4119,7 +4125,7 @@
 
 
 .fadeInUp{
-     animation-delay: 1s!important;
+     /* animation-delay: 0.2s!important; */
 }
 
 
@@ -4128,7 +4134,7 @@
 .flip-clock-small-wrapper .flip-clock-divider .flip-clock-label, body .flip-clock-small-wrapper ul li a div div.inn
 
 {
-    color:yellow !important;
+    color:white !important;
 }
 .flip-clock-label
 {
@@ -4209,3 +4215,6 @@ padding-bottom: 0px;
     
        
         }
+        .for-leter-space{
+            margin-left:51px;
+       }

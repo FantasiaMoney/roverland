@@ -5,6 +5,7 @@
 	<title>Rover</title>
 	<meta name="title" content="Rover" />
 	<meta name="description" content="Rover" />
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
 	<meta name="keywords" content="Rover" />
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -120,6 +121,7 @@
 	</style>
 
 	<link type="text/css" rel="stylesheet" href="clock_assets/flipclock.css" />
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
 
 <body>
@@ -127,7 +129,7 @@
 		<div id="main-wrapper">
 			<div id="bg-wrapper"></div>
 			<canvas id="bgCanvas"></canvas>
-			<div id="navbar">
+			<div id="navbar" style="">
 				<div class="container">
 					<div class="navbar-header">
 						<a class="logo-main" href="index.html" value="Home">
@@ -166,10 +168,11 @@
 
 
 							</nav>
-							<nav id="nav-right">
+							<nav id="nav-right" >
 								<ul class="banner-social">
-									<li><a href="https://www.instagram.com/rover.capital/" target="_blank"
-											value="Instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+									<li>
+										<a href="https://www.instagram.com/rover.capital/" target="_blank"
+											value="Instagram" title="Instagram" class="external"><i class="fab fa-instagram"></i></a>
 									</li>
 									<li><a href="javascript:void(0)" target="_blank" value="LinkedIn"
 											title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
@@ -208,10 +211,10 @@
 														<h1 class="text-white font-lg wow fadeInUp backInUp"
 															data-wow-duration="2s">All DeFi & <br>NFT Earnings</h1>
 
-														<h2 class="text-white font-lg2  wow fadeInUp"
+														<h2 class="text-white font-lg2  wow fadeInUp for-leter-space"
 															data-wow-duration="2s">
-															Uni<span class="Textfadehome">fied</span> in One
-															<span class="Textfadehome">Coin</span>
+															Uni<span class="Textfadehome fied">fied</span> in One
+															<span class="Textfadehome coinn">Coin</span>
 														</h2>
 														<h2 class="text-white font-lg2 wow fadeInUp">
 															Simpli<span class="Textfadehome" >fied</span> in One <span class="Textfadehome">Click</span></h2>
@@ -298,10 +301,10 @@
 							<div class="content-center  video-center">
 								<div class="content-center-blk">
 									<div class="video-blk">
-										<div class="video-wrapper wow fadeInUp">
+										<div class="video-wrapper">
 											<video id="video" class="videoPlayer" controls controlsList="nodownload"
-												autoplay loop poster="images/RyuStill.jpg">
-												<source src="images/rover-video.mp4" type="video/mp4">
+												poster="images/RyuStill.jpg">
+												<source src="https://rover.capital/res/RoverFinal_720.mp4" type="video/mp4">
 											</video>
 										</div>
 									</div>
@@ -323,7 +326,7 @@
 									<p class="text-center text-white">Creating a platform that could handle all the many
 										aspects of DeFi under one umbrella required that we build an exchange, money
 										market, yield aggregator, and more. We called this ambitious project our
-										Innovation Stack. Rover combines every facet of Defi & NFTs into a Unified and
+										Innovation Stack. Rover combines every facet of DeFi & NFTs into a Unified and
 										All-Inclusive ecosystem built to maximize user profit flow with the least
 										friction. Built on the very best financial tools in crypto, Rover’s Innovation
 										Stack is the most ambitious form of “Money Lego” architecture yet in DeFi.</p>
@@ -362,7 +365,7 @@
 										<img src="images/logo1.png" alt="logo_Uni.svg">
 									</div>
 									<div class="partner_image wow fadeInLeft ">
-										<img src="images/EthBnb.png" alt="logo_Uni.svg">
+										<img src="images/BNB.png" alt="logo_Uni.svg">
 									</div>
 								</div>
 							</div>
@@ -384,10 +387,12 @@
 							<div class="  dog-section-right">
 								<div class="dog-section-content">
 									<div class="section-subtitle wow fadeInUp">Fetch!</div>
-									<a class="button stackbtn fetchbuttonadd" href="javascript:void(0)" data-toggle="modal"
-										data-target="#exampleModal" value="Innovation Stack Get Notified" download>Get
-										Notified!</a>
-									<div class="section-title wow fadeInUp">One Click Easy</div>
+									<div class="banner-header-button wow fadeInUp">
+										<a class="button" href="javascript:void(0)" data-toggle="modal"
+											data-target="#exampleModal" download value="RoverHouse Get Notified">Get
+											Notified!</a>
+									</div>
+										<div class="section-title wow fadeInUp">One Click Easy</div>
 									<p class="wow fadeInUp">Send BNB. RoverFetch does the rest<br><br>Fetches you Rover
 										tokens at the best price by splitting the buy from our own RoverSwap and our
 										LGE, to reduce slippage while automatically pooling, staking, and compounding
@@ -417,7 +422,7 @@
 								<div class="row">
 									<div class="col-lg-4">
 										<div class="dog-section-image wow fadeInLeft">
-											<img src="images/img-2.png" />
+											<img src="images/Stick.png" />
 										</div>
 									</div>
 
@@ -427,22 +432,22 @@
 
 											<div class="section-title wow fadeInUp">SWAP</div>
 											<p class="wow fadeInUp">Buys from our own RoverSwap, built on top Uniswap &
-												Pancake, with our additional Defi technology for partnerships and
+												Pancake, with our additional DeFi technology for partnerships and
 												innovation stack integration</p>
 
 
 											<div class="section-title wow fadeInUp">Pool</div>
-											<p class="wow fadeInUp">Fetch the Liquidity Provider (LP) tokens from our
+											<p class="wow fadeInUp">Fetches the Liquidity Provider (LP) tokens from our
 												Rover/BNB pool</p>
 
 
 											<div class="section-title wow fadeInUp">Stake</div>
-											<p class="wow fadeInUp">Earn a minimum of 1200% APY guaranteed by statking
+											<p class="wow fadeInUp">Earns a minimum of 1200% APY guaranteed by staking
 												the LP tokens for you</p>
 
 
 											<div class="section-title wow fadeInUp">Compound</div>
-											<p class="wow fadeInUp">Ensure optimal APY as Rover stakes your claimable
+											<p class="wow fadeInUp">Ensures optimal APY as Rover stakes your claimable
 												tokens to compounds APR</p>
 
 
@@ -497,7 +502,7 @@
 										revenue</p>
 									<h3 class="wow fadeInUp">Contributor</h3>
 									<p class="wow fadeInUp">50% of contributor earnings goes to Rover. The contributor
-										can have its own LD. Rover helps with operations</p>
+										can have its own LD</p>
 									<h3 class="wow fadeInUp">White-label</h3>
 									<p class="wow fadeInUp">Use our LD & get % for your contribution</p>
 
@@ -575,7 +580,7 @@
 								<h1 class="wow fadeInUp"><span>RoverDao</span></h1>
 								<h2 class="wow fadeInUp">Governance</h2>
 								<h3 class="wow fadeInUp">Govern all the things</h3>
-								<p>ROVER is being created to uphold the principles of Defi. Holders of the ROVER token
+								<p>ROVER is being created to uphold the principles of DeFi. Holders of the ROVER token
 									thus become part of the decentralized governing organization RoverDao, which makes
 									decisions on behalf of the protocol. </p>
 
@@ -626,12 +631,12 @@
 						<div class="row row-eq-height flex-xs-column-reverse">
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>NFT</span></h1>
-								<h2 class="wow fadeInUp">Bridge Defi to NFT</h2>
-								<h3 class="wow fadeInUp">Trade NFT across marketplaces with <br> Full Defi benefits</h3>
+								<h2 class="wow fadeInUp">Bridge DeFi to NFT</h2>
+								<h3 class="wow fadeInUp">Trade NFT across marketplaces with <br> Full DeFi benefits</h3>
 								<p>The current explosion of NFTs in the marketplace has created the first real gateway
 									between mainstream everyday people and the heretofore esoteric and somewhat
 									self-enclosed world of decentralized finance. With this comes unprecedented
-									potential for growth in Defi, as capital floods into the space from new outside
+									potential for growth in DeFi, as capital floods into the space from new outside
 									sources. RoverNFT creates the bridge which allows users to bring their NFTs </p>
 
 
@@ -649,14 +654,12 @@
 					</div>
 				</section>
 
-				<section id="RoverChains"
-					class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate animate">
-					<div class="container dog-section-single">
+				<section id="RoverChains" class="content-banner-wrap lm-content-banner-wrap content-banner-box-shadow animate  animate">
+					<div class="container">
 						<div class="row row-eq-height">
 							<div class="col-md-6 align-self-center text-center">
-								<img src="images/ChainDog-1.png" alt="" class=" left-right-image w-50 wow fadeInLeft" />
+								<img src="images/ChainDog-1.png" alt="" class="left-right-image wow fadeInLeft" >
 							</div>
-
 							<div class="col-md-6 align-self-center text-left wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>RoverChains</span></h1>
 								<h2 class="wow fadeInUp">Cross Chains</h2>
@@ -666,21 +669,13 @@
 									<li>L2 DEX & Der Games</li>
 									<li>Social NFTs </li>
 								</ul>
-								<p> Integrated with RoverNFT, RoverChains on L2 provides a superior experience for users
-									with faster transaction times and lower fees, while bringing on-chain and off-chain
-									game items into the DeFi marketplace. This in turn creates a market for DEXs,
-									derivatives, and more, which drives even more capital into this already booming
-									sector of decentralized finance. </p>
-
-								<div class="banner-header-button wow fadeInUp">
-									<a class="button" href="javascript:void(0)" data-toggle="modal"
-										data-target="#exampleModal" download value="RoverChains Get Notified">Get
-										Notified!</a>
-								</div>
+								<p> Integrated with RoverNFT, RoverChains on L2 provides a superior experience for users with faster transaction times and lower fees, while bringing on-chain and off-chain game items into the DeFi marketplace. This in turn creates a market for DEXs, derivatives, and more, which drives even more capital into this already booming sector of decentralized finance. </p>
+							  </div>
 
 							</div>
+							
 						</div>
-					</div>
+					
 				</section>
 
 				<section id="Token" class="content-banner-wrap content-banner-box-shadow animate  animate">
@@ -696,10 +691,10 @@
 									<li>Burn Unsold Tokens</li>
 								</ul>
 								<h2 class="wow fadeInUp">Utility</h2>
-								<p>ROVER Token has the combined utility & revenue of all the Defi & NFT platforms that
+								<p>ROVER Token has the combined utility & revenue of all the DeFi & NFT platforms that
 									Rover offers, from its own version and TLV in Uniswap/Pancake, Yearn, Aave,
 									Synthetix, Mirror, Maker, to its own upcoming L2 DEX, derivatives & games, as Rover
-									bridges Defi & NFTs</p>
+									bridges DeFi & NFTs</p>
 
 								<div class="banner-header-button wow fadeInUp">
 									<a class="button" href="javascript:void(0)" data-toggle="modal"
@@ -724,9 +719,9 @@
 							</div>
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>Liquidity Mining</span></h1>
-								<p>1200%+ APY guaranteed minimum. Stakers can claim rewards at the end of the first
+								<p>1200%+ APY guaranteed minimum<br>Stakers can claim rewards at the end of the first
 									month</p>
-								<p>5x Time Bonus. Early LM miners earn up 400% extra over 30 days, relative to late
+								<p>5x Time Bonus<br>Early LM miners earn up 400% extra over 30 days, relative to late
 									stakers</p>
 								<div class="banner-header-button wow fadeInUp">
 									<a class="button" href="javascript:void(0)" data-toggle="modal"
@@ -747,7 +742,7 @@
 						<div class="row row-eq-height flex-xs-column-reverse">
 							<div class="col-md-6 align-self-center text-left text-white wow fadeInUp mt-md-0 mt-5">
 								<h1 class="wow fadeInUp"><span>Liquidity Generation Event (LGE)</span></h1>
-								<p>25% of the 100M supple, or 25M tokens, will be sold, at maximum. <br>
+								<p>25% of the 100M supply will be sold, at maximum. <br>
 								<p>25% goes to Liquidity Mining (LM) for the first 30 days</p>
 								<p> Unsold tokens will be burned.</p>
 								<p> Limited Supply. Only 1k BNB (~5 BTC worth) is available at the lowest price</p>
@@ -820,7 +815,7 @@
 	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 		aria-hidden="true">
 		<div class="modal-dialog" role="document">
-			<div class="modal-content" style="background-image: url('images/huge.jpg'); background-repeat: no-repeat;
+			<div class="modal-content" style="background-image: url('images/hexagon.jpg'); background-repeat: no-repeat;
     background-size: cover;">
 				<div class="modal-header">
 					<a type="button" class="close" data-dismiss="modal" value="Get Notified Pop-up Closed"
@@ -831,7 +826,7 @@
 				<div class="modal-body">
 					<div class=row>
 						<div class="col-md-6">
-							<img src="images/Stick.png">
+							<img src="images/StickPadWhite.png">
 						</div>
 						<div class="col-md-6" style="display: grid; align-items: center;">
 
@@ -867,6 +862,8 @@
 		new WOW().init();
 	</script>
 	<script src="js/shooting-stars.js" type="text/javascript"></script>
+
+	<script type="text/javascript"></script>
 </body>
 
 </html>

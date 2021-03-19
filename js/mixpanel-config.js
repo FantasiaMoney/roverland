@@ -28,7 +28,7 @@ $(document).ready(function ($) {
     saveDataInMixpanel();
 
     $('#outer-wrapper a').click(function () {
-        event.preventDefault();
+        // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("User Clicked on ", getCickedButtonValue);
         mixpanel.track("Clkd" + getCickedButtonValue, {
@@ -37,7 +37,7 @@ $(document).ready(function ($) {
     });
 
     $('#exampleModal a').click(function () {
-        event.preventDefault();
+        // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("User Clicked on ", getCickedButtonValue);
         mixpanel.track("Clkd" + getCickedButtonValue, {
