@@ -1639,8 +1639,8 @@
      position: relative;
      display: block;
      text-align: center;
-     padding-left: 40px;
-     padding-right: 40px;
+     padding-left: 60px;
+     padding-right: 60px;
     /* padding: 0px 40px; */
      /* padding: 0px 10%; */
  
@@ -3310,7 +3310,7 @@
          width: 100%;
     }
      .content-center, .content-banner-center .banner-blk-txt {
-         padding: 0;
+         padding: 20px !important;
     }
      .banner-blk-img.neg-margin img {
          margin: 0;
@@ -4182,3 +4182,30 @@ padding-bottom: 0px;
 }
 
 
+@media (max-width:767px) {
+
+.Unicorn_images_issue{
+    padding-top: 50px;
+}
+
+
+}
+
+@media only screen and (max-width:767px) and (min-width:520px)  {
+    canvas
+    {
+        height: 250vh !important;
+    }
+
+   
+    }
+
+
+    @media only screen and (max-width:519px) and (min-width:320px)  {
+        canvas
+        {
+            height: 150vh !important;
+        }
+    
+       
+        }

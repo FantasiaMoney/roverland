@@ -195,12 +195,12 @@
 				<div id="banner-wrapper">
 					<div id="banner-main">
 						<div class="banner-text-wrap">
-							<div class="container d-block">
-								<div class="row vh-100  row-eq-height animate">
-									<div class="col-md-7 align-self-md-center align-self-end">
-										<img class="animate-left" src="images/newimg.png" alt="" />
+							<div class="container-fluid " style="height:100% !important">
+								<div class="row  row-eq-height animate">
+									<div class="col-md-7 pt-4  col-sm-12 Unicorn_images_issue align-self-md-center align-self-end">
+										<img class="animate-left pt-5" src="images/newimg.png" alt="" />
 									</div>
-									<div class="col-md-5 align-self-md-center ">
+									<div class="col-md-5 col-sm-12 pt-5 align-self-md-center ">
 										<div class="banner-text-center">
 											<div class="banner-header text-center ">
 												<div class="banner-header-title">
@@ -258,7 +258,11 @@
 															play: 'play',
 															wrapper: 'flip-clock-small-wrapper'
 														};
+
+													//	var countdown = new Date(UTCmonday.setHours(UTCmonday.getHours() - 8));
 														var countdown = 1616432400 - ((new Date().getTime()) / 1000); // from: 03/22/2021 10:00 am -0700
+														console.log(countdown);
+														console.log(1616432400 -(new Date().getTime()) / 1000);
 														countdown = Math.max(1, countdown);
 														$('.clock-builder-output').FlipClock(countdown, opts);
 													});
@@ -289,7 +293,7 @@
 				</div>
 				<div id="content-wrapper">
 					<div id="content-video" class="content-banner-wrap content-banner-box-shadow">
-						<div class="container">
+						<div class="container-fluid" style="height:100% !important">
 						
 							<div class="content-center  video-center">
 								<div class="content-center-blk">
@@ -309,7 +313,7 @@
 					</div>
 				</div>
 				<div id="innovation-stack">
-					<div class="container">
+					<div class="container-fluid" style="height:100% !important">
 						<div class="row justify-content-center">
 							<div class="col-12">
 								<div class="section-subtitle wow fadeInUp text-center">Innovation Stack</div>
