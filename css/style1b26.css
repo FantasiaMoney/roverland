@@ -1353,7 +1353,7 @@
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
-#RoverHouse, #NFT, #Token
+#RoverHouse, #NFT, #Token, #banner-main, #bgCanvas2
 {
      background-image: url('../images/DarkHex2.jpg');
      background-repeat: no-repeat;
