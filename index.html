@@ -262,10 +262,11 @@
 															wrapper: 'flip-clock-small-wrapper'
 														};
 
-													//	var countdown = new Date(UTCmonday.setHours(UTCmonday.getHours() - 8));
-														var countdown = 1616432400 - ((new Date().getTime()) / 1000); // from: 03/22/2021 10:00 am -0700
-														console.log(countdown);
-														console.log(1616432400 -(new Date().getTime()) / 1000);
+												
+													//	var countdown = 1616432400 - ((new Date().getTime()) / 1000); // from: 03/22/2021 10:00 am -0700
+											
+                                                         	var countdown =1617040800 - ((new Date().getTime()) / 1000); // from: Monday March 29 10AM PST  
+		
 														countdown = Math.max(1, countdown);
 														$('.clock-builder-output').FlipClock(countdown, opts);
 													});
