@@ -12,9 +12,9 @@ $(document).ready(function ($) {
         // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
-        gtag('event', 'screen_view', {
-            'screen_name': getCickedButtonValue
-        });
+        // gtag('event', 'screen_view', {
+        //     'screen_name': getCickedButtonValue
+        // });
         gtag('event', "Clkd" + getCickedButtonValue, {
             'source': getCickedButtonValue
         });
@@ -26,9 +26,9 @@ $(document).ready(function ($) {
         // event.preventDefault();
         var getCickedButtonValue = $(this).attr('value');
         // console.log("Google analytics User Clicked on ", getCickedButtonValue);
-        gtag('event', 'screen_view', {
-            'screen_name': getCickedButtonValue
-        });
+        // gtag('event', 'screen_view', {
+        //     'screen_name': getCickedButtonValue
+        // });
         gtag('event', "Clkd" + getCickedButtonValue, {
             'source': getCickedButtonValue
         });
