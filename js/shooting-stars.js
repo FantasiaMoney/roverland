@@ -50,7 +50,7 @@ function Terrain(options) {
     for (var j = power / i / 2; j < power; j += power / i) {
       this.points[j] = (this.points[j - power / i / 2] + this.points[j + power / i / 2]) / 2 + Math.floor(Math.random() * -displacement + displacement);
     }
-    displacement *= 0.6;
+    displacement *= 0.1;
   }
 
   document.body.appendChild(this.terrain);
@@ -158,7 +158,7 @@ ShootingStar.prototype.update = function () {
 var entities = [];
 
 // init the stars
-for (var i = 0; i < height; i++) {
+for (var i = 0; i < height/100; i++) {
   entities.push(new Star({
     x: Math.random() * width,
     y: Math.random() * height
@@ -190,6 +190,6 @@ function animate() {
   while (entLen--) {
     entities[entLen].update();
   }
-  requestAnimationFrame(animate);
+  // requestAnimationFrame(animate);
 }
-animate();
+//animate();

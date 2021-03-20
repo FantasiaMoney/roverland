@@ -906,7 +906,7 @@
      overflow: hidden;
      width: 100%;
      float: left;
-     box-shadow: 0px 0px 30px 30px #000000ab;
+     box-shadow: 0px 0px 30px 30px #dd5599;
 }
  .home-wrap #content-wrapper {
      padding: 0;
@@ -1769,7 +1769,7 @@
      margin: 0px;
      width: 100%;
      height: auto;
-     background: #000000;
+     background: #eeaacc;
      min-height: 240px;
 }
  .profile-users {
@@ -2215,18 +2215,19 @@
      overflow-y: hidden;
 }
 .modal-backdrop.show {
-    opacity: 0.8;
-    background: #000000;
+    opacity: 0.91;
+    background: #010101;
 }
  .modal-backdrop.in {
-     opacity: 0.9;
+     opacity: 0.92;
 }
  .modal-backdrop.show {
-     opacity: 0.9;
+     opacity: 0.93;
 }
- .modal {
-     z-index: 9999;
-}
+     /* bootstrap modal-backdrop is 1040, so need 1+ more should def be above, if even needed */
+ /* .modal {
+     z-index: 1041;
+} */
  .modal-open .modal {
     /* text-align: center;
      display: flex;
@@ -2273,7 +2274,7 @@
      line-height: 5px;
      text-align: center;
      font-weight: 400;
-     color: #000;
+     color: #aa00ff;
      border: 1px solid #a7a4a4;
 }
  .modal-header {
@@ -3528,7 +3529,7 @@
          width: 100%;
     }
      .modal-backdrop.show {
-         opacity: 1;
+         opacity: 0.8
     }
      .modal-dialog {
          display: block;
