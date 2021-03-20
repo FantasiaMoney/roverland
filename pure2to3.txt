@@ -1,0 +1,91 @@
+2038a2039,2040
+> 
+> 
+2051a2054,2055
+> 
+> 
+2074a2079,2080
+> 
+> 
+2503a2510,2511
+> 
+> 
+2561a2570,2571
+> 
+> 
+2814,2851c2824,2854
+<   from {
+<     background-position: 0 0;
+<   }
+< 
+<   to {
+<     background-position: 100% 0;
+<   }
+< }
+< 
+< @-webkit-keyframes awan-animasi {
+<   from {
+<     background-position: 0 0;
+<   }
+< 
+<   to {
+<     background-position: 100% 0;
+<   }
+< }
+< 
+< @-ms-keyframes awan-animasi {
+<   from {
+<     background-position: 0 0;
+<   }
+< 
+<   to {
+<     background-position: 100% 0;
+<   }
+< }
+< 
+< @-moz-keyframes awan-animasi {
+<   from {
+<     background-position: 0 0;
+<   }
+< 
+<   to {
+<     background-position: 100% 0;
+<   }
+< }
+---
+>          from {
+>              background-position: 0 0;
+>         }
+>          to {
+>              background-position: 100% 0;
+>         }
+>     }
+>      @-webkit-keyframes awan-animasi {
+>          from {
+>              background-position: 0 0;
+>         }
+>          to {
+>              background-position: 100% 0;
+>         }
+>     }
+>      @-ms-keyframes awan-animasi {
+>          from {
+>              background-position: 0 0;
+>         }
+>          to {
+>              background-position: 100% 0;
+>         }
+>     }
+>      @-moz-keyframes awan-animasi {
+>          from {
+>              background-position: 0 0;
+>         }
+>          to {
+>              background-position: 100% 0;
+>         }
+>     }
+3184c3187
+< }*/
+---
+> }*/
+\ No newline at end of file

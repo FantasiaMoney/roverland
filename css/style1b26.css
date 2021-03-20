@@ -1353,7 +1353,7 @@
      /* background: var(--main-color); */
      background: var(--new-black-color);
 }
-#RoverHouse, #NFT, #Token, #banner-main, #bgCanvas2
+#RoverHouse, #NFT, #Token, #banner-main, #partner, #bgCanvas2
 {
      background-image: url('../images/DarkHex2.jpg');
      background-repeat: no-repeat;
@@ -3759,7 +3759,8 @@
 }
 /*@media only screen (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     */
-     @media only screen and (min-height: 600px) and (min-width: 768px) and (orientation: portrait) {
+     @media only screen and (min-height: 600px) and (min-width: 768px) { 
+         /* and (orientation: portrait) { */
     }
     /******** iPhone Fixes ********/
     /* iPhone 8 with notch */
@@ -3802,7 +3803,7 @@
          -moz-animation: awan-animasi 10s linear infinite;
          -webkit-animation: awan-animasi 10s linear infinite;
     }
-     @keyframes awan-animasi {
+     /* @keyframes awan-animasi {
          from {
              background-position: 0 0;
         }
@@ -3837,7 +3838,7 @@
              background-position: 100% 0;
         }
         ;
-    }
+    } */
      .content-box-clouds{
         height: auto;
         padding-bottom: 0px !important;
