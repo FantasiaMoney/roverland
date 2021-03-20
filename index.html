@@ -668,7 +668,7 @@
 								<div class="banner-header-button wow fadeInUp">
 									<a class="button" href="javascript:void(0)" data-toggle="modal"
 										data-target="#exampleModal" download
-										value="LGE_GN">Get Notified!</a>
+										value="LgeGN">Get Notified!</a>
 								</div>
 
 							</div>
@@ -732,10 +732,15 @@
 <div>
 	<div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
 		<script>
+			const GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-XKCWRHS6D2';
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag('js', new Date());
+			gtag('config', GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN);
+
 			gtag('event', 'screen_view', {
             'screen_name': "GnPu"
         });
-
 		</script>
 		<div class="modal-dialog" role="document">
 		  <div class="modal-content" style="background-image: url('images/hexagon.jpg'); background-repeat: no-repeat;
