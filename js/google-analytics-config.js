@@ -15,7 +15,7 @@ $(document).ready(function ($) {
         // gtag('event', 'screen_view', {
         //     'screen_name': getCickedButtonValue
         // });
-        gtag('event', "Clkd" + getCickedButtonValue, {
+        gtag('event', getCickedButtonValue+"Clkd", {
             'source': getCickedButtonValue
         });
     });
