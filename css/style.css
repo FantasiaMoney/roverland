@@ -666,29 +666,6 @@ a.button,.button {
   position: fixed;
 }
 
-/* #nav-right ul li{
-     padding: 0 8px;
-}
- #nav-right ul.nav-social{
-     padding: 0 16px;
-}
- #nav-right ul.nav-social li{
-     margin: 0;
-}
- #nav-right ul.nav-social li a {
-     font-size: var(--sm-icon);
-}
- #nav-right ul.nav-social li a:hover, #navbar.sticky #nav-right ul.nav-social li a:hover {
-     color: var(--sub-color);
-}
- .nav-right-title{
-     color: var(--nav-light-color);
-     font-weight: 300;
-     padding: 16px 16px;
-     line-height: 40px;
-}
- */
-
 #navbar.sticky .l-btn,#navbar.sticky .l-btn:visited {
   color: var(--main-color);
   border: 1px solid var(--main-color);
@@ -3170,9 +3147,71 @@ body.modal-open {
   margin-left: 51px;
 }
 
-/*.coinn{
-     margin-left:0px;
+/*
+/////////////////
+// MVD FROM INDEX
+/////////////////
+*/
+
+.modal-p {
+  color: #042c56;
+  font-weight: 600;
 }
-.fied{
-     margin-left:50px;
-}*/
+
+.modal-ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.animate-right,
+.animate-left {
+  opacity: 0
+}
+
+.animate .animate-left {
+  -webkit-animation: left-in-animate 0.5s ease-out forwards;
+  animation: left-in-animate 0.5s ease-out forwards;
+}
+
+.animate .animate-right {
+  -webkit-animation: right-in-animate 0.8s ease-out forwards;
+  animation: right-in-animate 0.8s ease-out forwards;
+}
+
+/* canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+} */
+
+.font-lg {
+  font-size: 60px;
+}
+
+.font-lg2 {
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+
+
+  .font-lg {
+    font-size: 48px;
+  }
+
+  .font-lg2 {
+    font-size: 30px;
+    padding: 0 !important;
+  }
+
+  .bg-clouds img {
+    margin-bottom: 60px
+  }
+
+  .yellow_padding {
+    padding-left: 40px !important;
+  }
+}
+
