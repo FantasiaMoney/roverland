@@ -433,7 +433,7 @@ a.button,.button {
   overflow: hidden;
   width: 100%;
   float: left;
-  box-shadow: 0px 0px 30px 30px #dd5599;
+  box-shadow: 0px 0px 30px 30px #000002;
 }
 
 .home-wrap #content-wrapper {
@@ -1401,7 +1401,7 @@ body.modal-open {
   line-height: 5px;
   text-align: center;
   font-weight: 400;
-  color: #aa00ff;
+  color: #000003;
   border: 1px solid #a7a4a4;
 }
 
