@@ -238,6 +238,22 @@ $(document).ready(function($) {
 		return false;		
 	});	
 	
+	$('.n-link-12').click(function () {	
+		menuclose();
+		var elem = $('#Team')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#Team").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
 	
 	
 	if(!md.is(md.mobile())){

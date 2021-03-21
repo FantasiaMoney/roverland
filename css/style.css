@@ -873,10 +873,6 @@ a.button,.button {
  */
 
 
-#teamMember {
-  color: white!important;
-}
-
 #content-video {
   background: #110e19;
 }
@@ -885,7 +881,7 @@ a.button,.button {
   background: var(--new-black-color);
 }
 
-#RoverGib,#RoverOne,#RoverChains,#Fetch,#innovation-stack {
+#Team, #RoverGib,#RoverOne,#RoverChains,#Fetch,#innovation-stack {
   /* background: var(--main-color); */
   background: var(--new-black-color);
 }
@@ -1117,10 +1113,6 @@ a.button,.button {
   /* padding: 0px 10%; */
   margin-bottom: var(--lg-pad);
 }
-
-/* .banner-wrapper #innovation-stack{
-    padding: -10px 0px !important;
-} */
 
 .content-top-center .content-center {
   padding: 0;
@@ -2971,6 +2963,20 @@ body.modal-open {
   direction: ltr;
 }
 
+.dog-section-single .dog-section-content .section-subtitle,#Team .section-subtitle,#Fetch .section-subtitle {
+  display: block;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* font-size: 13px; */
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  /* color: #0f5477; */
+  color: var(--sub-color);
+  /* color: #FFF; */
+}
+
 .dog-section-single .dog-section-content .section-subtitle,#innovation-stack .section-subtitle,#Fetch .section-subtitle {
   display: block;
   font-weight: normal;
@@ -3061,6 +3067,24 @@ body.modal-open {
   padding: 50px 0px;
 }
 
+#Team .stack_partners {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+
+#Team .stack_partners .partner_image {
+  max-width: 150px !important;
+  margin-bottom: 2rem;
+}
+
+#Team .stack_partners div img {
+  width: 100%;
+}
+
 #innovation-stack .stack_partners {
   display: flex;
   align-items: center;
@@ -3069,15 +3093,13 @@ body.modal-open {
   flex-wrap: wrap;
 }
 
+
 #innovation-stack .stack_partners .partner_image {
-  /* display: contents; */
-  /* visibility: visible !important; */
   max-width: 150px !important;
   margin-bottom: 2rem;
 }
 
 #innovation-stack .stack_partners div img {
-  /* max-width: 150px; */
   width: 100%;
 }
 
