@@ -872,6 +872,11 @@ a.button,.button {
 }
  */
 
+
+#teamMember {
+  color: white!important;
+}
+
 #content-video {
   background: #110e19;
 }
