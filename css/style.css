@@ -2732,6 +2732,10 @@ body.modal-open {
     border: 1px solid var(--white-color);
   }
 }
+#partner {
+  padding: 5 0 0 0;
+  min-height: 1000px;
+}
 
 #aboveVideo {
   min-height: 820px!important;
@@ -2765,6 +2769,10 @@ body.modal-open {
   }
   #clock {
     float:right;
+  }
+  #partner {
+    padding: 5 0 0 0;
+    min-height: 700px;
   }
 } 
 @media only screen and (max-width: 568px) and (min-height: 568px) and (orientation: portrait) {
