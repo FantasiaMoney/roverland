@@ -35,6 +35,19 @@
 	<link rel="stylesheet" href="css/wow.css">
 	<script type="text/javascript" src="js/wow.js"></script>
 
+	<script>
+        if(!GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN)
+            var GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-JVV35V4GTP';
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN);
+  
+        gtag('event', 'screen_view', {
+              'screen_name': "OnLoad"
+          });
+      </script>
+
 	<!-- 	
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,700;1,800&display=swap" rel="stylesheet"> -->
