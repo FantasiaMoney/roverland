@@ -124,6 +124,22 @@ $(document).ready(function($) {
 	});	
 	$('.n-link-5').click(function () {		
 		menuclose();
+		var elem = $('#RoverFunds')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#RoverFunds").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
+	$('.n-link-6').click(function () {	
+		menuclose();
 		var elem = $('#RoverDao')[0];		
 		if(!md.is(md.mobile())){
 			elem.scrollIntoView({
@@ -134,22 +150,6 @@ $(document).ready(function($) {
 		} else {
 			$('html,body').animate({
 				scrollTop: $("#RoverDao").offset().top - 56
-			}, 800 );
-		}
-		return false;		
-	});	
-	$('.n-link-6').click(function () {	
-		menuclose();
-		var elem = $('#RoverOne')[0];		
-		if(!md.is(md.mobile())){
-			elem.scrollIntoView({
-				behavior: "smooth",
-				block: "center",
-				inline: "nearest"
-			});
-		} else {
-			$('html,body').animate({
-				scrollTop: $("#RoverOne").offset().top - 56
 			}, 800 );
 		}
 		return false;		
