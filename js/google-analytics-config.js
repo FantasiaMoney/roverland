@@ -15,7 +15,7 @@ $(document).ready(function ($) {
         // gtag('event', 'screen_view', {
         //     'screen_name': getCickedButtonValue
         // });
-        gtag('event', getCickedButtonValue+"Clkd", {
+        gtag('event', getCickedButtonValue+"ClkdRD", {
             'source': getCickedButtonValue
         });
     });
@@ -29,7 +29,7 @@ $(document).ready(function ($) {
         // gtag('event', 'screen_view', {
         //     'screen_name': getCickedButtonValue
         // });
-        gtag('event', "Clkd" + getCickedButtonValue, {
+        gtag('event', "ClkdRD" + getCickedButtonValue, {
             'source': getCickedButtonValue
         });
     });
