@@ -43,6 +43,23 @@ $(document).ready(function($) {
 
 	}
 	
+	$('.n-link-0').click(function () {	
+		menuclose();
+		var elem = $('#Metaverse')[0];		
+		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#Metaverse").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
 	$('.n-link-1').click(function () {	
 		menuclose();
 		var elem = $('#swap')[0];		
@@ -58,20 +75,6 @@ $(document).ready(function($) {
 				scrollTop: $("#swap").offset().top - 56
 			}, 800 );
 		}
-		// menuclose();
-		// var elem = $('#RoverHouse')[0];		
-		// if(!md.is(md.mobile())){
-		// 	elem.scrollIntoView({
-		// 		behavior: "smooth",
-		// 		block: "center",
-		// 		inline: "nearest"
-		// 	});
-		// } else {
-		// 	$('html,body').animate({
-		// 		scrollTop: $("#RoverHouse").offset().top - 56
-		// 	}, 800 );
-		// }
-
 		return false;		
 	});	
 	$('.n-link-2').click(function () {	
