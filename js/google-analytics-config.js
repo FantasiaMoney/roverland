@@ -1,5 +1,5 @@
 $(document).ready(function ($) {
-    const GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-ZGD4N5DQ62';
+    const GOOGLE_ANALYTICS_USER_TRACKER_PROJECT_TOKEN = 'G-XKCWRHS6D2';
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -15,7 +15,7 @@ $(document).ready(function ($) {
         // gtag('event', 'screen_view', {
         //     'screen_name': getCickedButtonValue
         // });
-        gtag('event', getCickedButtonValue+"ClkdRD", {
+        gtag('event', getCickedButtonValue+"Clkd", {
             'source': getCickedButtonValue
         });
     });
@@ -29,7 +29,7 @@ $(document).ready(function ($) {
         // gtag('event', 'screen_view', {
         //     'screen_name': getCickedButtonValue
         // });
-        gtag('event', "ClkdRD" + getCickedButtonValue, {
+        gtag('event', "Clkd" + getCickedButtonValue, {
             'source': getCickedButtonValue
         });
     });
