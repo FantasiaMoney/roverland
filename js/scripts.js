@@ -257,7 +257,7 @@ $(document).ready(function($) {
 		}
 		return false;		
 	});	
-	
+// airdrop	
 	$('.n-link-13').click(function () {	
 		menuclose();
 		var elem = $('#RoverAirdrop')[0];		
