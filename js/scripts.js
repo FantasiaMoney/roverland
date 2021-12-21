@@ -207,6 +207,25 @@ $(document).ready(function($) {
 		}
 		return false;		
 	});	
+
+	// airdrop	
+	$('.n-link-Airdrop').click(function () {	
+		menuclose();
+		var elem = $('#RoverAirdrop')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#LM").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
+
 	$('.n-link-10').click(function () {	
 		menuclose();
 		var elem = $('#LM')[0];		
@@ -253,23 +272,6 @@ $(document).ready(function($) {
 		} else {
 			$('html,body').animate({
 				scrollTop: $("#Team").offset().top - 56
-			}, 800 );
-		}
-		return false;		
-	});	
-// airdrop	
-	$('.n-link-13').click(function () {	
-		menuclose();
-		var elem = $('#RoverAirdrop')[0];		
-		if(!md.is(md.mobile())){
-			elem.scrollIntoView({
-				behavior: "smooth",
-				block: "center",
-				inline: "nearest"
-			});
-		} else {
-			$('html,body').animate({
-				scrollTop: $("#LM").offset().top - 56
 			}, 800 );
 		}
 		return false;		
