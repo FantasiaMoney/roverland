@@ -258,6 +258,22 @@ $(document).ready(function($) {
 		return false;		
 	});	
 	
+	$('.n-link-13').click(function () {	
+		menuclose();
+		var elem = $('#RoverAirdrop')[0];		
+		if(!md.is(md.mobile())){
+			elem.scrollIntoView({
+				behavior: "smooth",
+				block: "center",
+				inline: "nearest"
+			});
+		} else {
+			$('html,body').animate({
+				scrollTop: $("#LM").offset().top - 56
+			}, 800 );
+		}
+		return false;		
+	});	
 	
 	if(!md.is(md.mobile())){
 		$('#content-1').waypoint(function(direction) {

@@ -896,7 +896,7 @@ a.button,.button {
   border-radius: 25px !important;
 }
 
-#RoverDao {
+#RoverDao, #RoverAirdrop {
   background-image: url('../images/DarkHex1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
