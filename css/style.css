@@ -56,8 +56,8 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.6;
-  color: #161b29;
-  color: var(--main-color);
+  color: #ffc000;
+  /* color: var(--main-color); */
   scroll-behavior: smooth;
 }
 
@@ -145,7 +145,8 @@ button:focus {
 }
 
 a,a:visited {
-  color: var(--main-color);
+  color: #fff;
+  /* color: var(--main-color); */
   border: none;
   outline: 0;
   -moz-outline-style: none;
@@ -887,7 +888,8 @@ a.button,.button {
 }
 
 #RoverHouse,#NFT,#Token,#banner-main,#partner,#bgCanvas2 {
-  background-image: url('../images/DarkHex2.jpg');
+  /* background-image: url('../images/DarkHex2.jpg'); */
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1376,7 +1378,7 @@ body.modal-open {
 
 .modal-content {
   position: relative;
-  background: #FFF;
+  background: #111;
   /* border: 1px solid rgba(0, 0, 0, 0.2);
     */
   border: 0px;
