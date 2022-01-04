@@ -9,8 +9,8 @@
   --main-color: #4e4e4e;
   --sub-color: #ffc000;
   --hover-color: #ECAF4E;
-  --shadow-color: rgba(229, 147, 16, 0.48);
-  --dark-color: #dd8613;
+  --shadow-color: #ffc000;
+  --dark-color: #ffc000;
   --light-color: #e7e8e9;
   --grey-color: #97979a;
   /* --new-black-color:#1f1f24; */
@@ -1400,7 +1400,7 @@ body.modal-open {
   line-height: 5px;
   text-align: center;
   font-weight: 400;
-  color: green;
+  color: brown;
   border: 1px solid #a7a4a4;
 }
 
