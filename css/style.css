@@ -2488,6 +2488,11 @@ body.modal-open {
     line-height: 24px;
   }
 
+  #wrapper ul {
+    list-style-type: none;
+    list-style-position: outside;
+}
+
   body.modal-open {
     position: relative;
     width: 100%;
