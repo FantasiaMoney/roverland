@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
 
 :root {
-  --main-color: #4e4e4e;
+  --main-color: #ffc000;
   --sub-color: #ffc000;
   --hover-color: #ECAF4E;
   --shadow-color: #ffc000;
@@ -1378,7 +1378,7 @@ body.modal-open {
 
 .modal-content {
   position: relative;
-  background: #111;
+  background: #555;
   /* border: 1px solid rgba(0, 0, 0, 0.2);
     */
   border: 0px;
