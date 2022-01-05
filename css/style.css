@@ -1378,11 +1378,11 @@ body.modal-open {
 
 .modal-content {
   position: relative;
-  background: #555;
+  background: #111;
   /* border: 1px solid rgba(0, 0, 0, 0.2);
     */
   border: 0px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 25px var(--shadow-color);
   border-radius: 50px;
 }
 
